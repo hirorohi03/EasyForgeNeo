@@ -1,0 +1,1 @@
+Module: inpaint_noobai_xl+lama, Model: NoobE_Inpaint [32a1ca88], Weight: 0.8, Resize Mode: Crop and Resize, Processor Res: 0.5, Threshold A: 0.5, Threshold B: 0.5, Guidance Start: 0, Guidance End: 1, Pixel Perfect: False, Control Mode: Balanced, Hr Option: Both

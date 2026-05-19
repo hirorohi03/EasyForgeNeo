@@ -1,0 +1,95 @@
+name: Bug report（バグ報告）
+description: Create a report to help us improve（改善に役立てるためのレポートを作成する）
+title: "[Bug]: "
+labels: ["bug-report"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > The title of the bug report should be short and descriptive.
+        > Use relevant keywords for searchability.
+        > Do not leave it blank, but also do not put an entire error log in it.
+        > バグ報告のタイトルは、簡潔かつ内容を的確に表すものにしてください。
+        > 検索しやすくするために、関連するキーワードを使用してください。
+        > 空白のままにしないでください。ただしエラーログの全文を記載することも避けてください。
+  - type: checkboxes
+    attributes:
+      label: Checklist（チェックリスト）
+      description: |
+        Please perform basic debugging to see if your environment or configuration is the cause of the issue.（環境や設定に問題がないか確認するため、基本的なデバッグを行ってください）
+      options:
+        - label: The issue exists after disabling all extensions.（この問題はEasyReforge-Nextのクリーンインストール環境でも発生します。）
+        - label: The issue exists in the current version of EasyReforge-Next.（この問題はEasyReforge-Nextの現行バージョンでも発生します。）
+        - label: The issue has not been reported before.（この問題はこれまで報告されたことがありません。）
+  - type: markdown
+    attributes:
+      value: |
+        > Please fill this form with as much information as possible. Don't forget to "Sysinfo" and "Your web browser" and provide screenshots if possible.
+        > このフォームにはできるだけ多くの情報をご記入ください。「Sysinfo」と「ご利用のWebブラウザ」の項目を忘れずに入力し、可能であればスクリーンショットも添付してください。
+  - type: textarea
+    id: what-did
+    attributes:
+      label: What happened ?（何が起こったのですか？）
+      placeholder: |
+        Tell us what happened in a very clear and simple way.
+        何が起こったのか、できるだけわかりやすく簡潔に教えてください。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce（再現手順）
+      placeholder: |
+        1. Go to ...
+        2. Press ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: what-should
+    attributes:
+      label: Expected behavior（期待される動作）
+      placeholder: |
+        Tell us what you think the normal behavior should be.
+        正常な動作はどうあるべきかお聞かせください。
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Your web browser（ご利用のWebブラウザ）
+      multiple: true
+      options:
+        - Mozilla Firefox
+        - Google Chrome
+        - Apple Safari
+        - Microsoft Edge
+        - Android
+        - iOS
+        - Other
+  - type: textarea
+    id: sysinfo
+    attributes:
+      label: Sysinfo
+      description: Drag the sysinfo file into the field to upload it. If you submit your report without including the sysinfo file, the report will be closed.（sysinfoファイルをフィールドにドラッグしてアップロードしてください。sysinfoファイルを添付せずにレポートを送信すると、レポートは閉じられます。）
+      placeholder: |
+        1. Go to WebUI Settings -> Sysinfo -> Download system info.
+            If WebUI fails to launch, use --dump-sysinfo commandline argument to generate the file.
+            WebUI が起動しない場合は、--dump-sysinfo コマンドライン引数を使用してファイルを生成してください。
+        2. Upload the Sysinfo as a attached file, Do NOT paste it in as plain text.
+            Sysinfoを添付ファイルとしてアップロードしてください。プレーンテキストとして貼り付けないでください。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console logs（コンソールログ）
+      description: Please provide **full** cmd/terminal logs from the moment you started UI to the end of it, after the bug occurred. If it's very long, provide a link to pastebin or similar service.（バグが発生した際、UIを起動した時点から終了するまでの**完全な**cmd/ターミナルのログをご提供ください。ログが非常に長い場合は、Pastebinなどのサービスへのリンクをご提供ください。）
+      render: Shell
+    validations:
+      required: true
+  - type: textarea
+    id: misc
+    attributes:
+      label: Additional information（補足情報）

@@ -1,0 +1,226 @@
+<p align="center">
+🌍 
+English（作成中） |
+<strong>日本語</strong> |
+</p>
+
+---
+
+<div align="center">
+
+ # EasyForgeNeo
+
+[Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) をコアとしたAnima画像生成環境の1クリックインストーラー、**Windows** 用 🔹 Nvidia GPU 対応
+
+**Zuntan氏**（[@Zuntan03](https://github.com/Zuntan03)）に捧ぐ  
+
+</div>
+
+***
+
+EasyForgeNeo は、[Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) (Forge Neo) を、Windows、Nvidia GPU環境に導入するための1クリックインストーラーです。
+
+Git や Python のセットアップは不要です。
+
+Zuntan氏（[@Zuntan03](https://github.com/Zuntan03)）が開発された [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (reForge) 1クリックインストーラーである [EasyReforge](https://github.com/Zuntan03/EasyReforge)、およびそのforkである拙作 [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) の **Forge Neo版** と理解されるのが早いです。
+
+特に、**Anima**（[circlestone-labs/Anima](https://huggingface.co/circlestone-labs/Anima)）を用いた画像生成に特化して最適化されており、関連モデルの自動ダウンロード機能、推奨拡張機能、初期設定、および便利な `styles.csv` をあらかじめパッケージングしています。
+
+また、インストールフォルダ内に [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (reForge) をインストールし、モデルと生成画像を共有、一体管理することができます。拙作の [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) インストール済み環境への本作の追加導入にも対応しています。
+
+***
+
+## 💕 主な特徴
+
+* **1クリック簡単インストール**: 複雑な環境構築（PythonやGitの個別導入、依存関係の解決など）をすべて自動化し、初心者でも手軽に環境を展開できます。
+
+* **Animaモデル特化**:
+  * Anima関連モデルの専用ダウンローダーを搭載。導入直後からAnimaでの画像生成が可能です。
+  * Animaでの画像生成向けの初期設定やスタイルプリセット（`styles.csv`）を搭載。
+
+* **EasyReforge-Nextとの互換性**:
+  * 拙作 [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) と同等環境を組み込むことが可能で、**モデルおよび生成画像の格納先フォルダを共有**することができます。
+  * ただし、Zuntan氏の [EasyReforge](https://github.com/Zuntan03/EasyReforge) には対応していません。
+
+* **柔軟な導入パターン**:
+  * 既に [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) がインストールされている環境へ、追加で **EasyForgeNeo (本作)** を導入可能です。
+  * 逆に **EasyForgeNeo (本作)** を新規インストールした後に、[EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) と同等環境を追加することも可能です。
+
+## **📦 コンポーネント**
+
+**コアコンポーネント**
+
+| **🔧 コンポーネント** | **🆕 バージョン** | **📝 説明** |
+| :--- | :--- | :--- |
+| [Git](https://git-scm.com/) | 2.53.0.3 | 必要に応じてインストール/更新 |
+| [Python](https://www.python.org/downloads/release/python-31312/)  | 3.13.12 | venv版（reForge 用は3.10.11） |
+| [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) および拡張機能 | 最新版 | ユーザーが任意に更新 |
+| [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) および拡張機能 | 最新版 | ユーザーが任意に更新 |
+| Anima モデルおよびダウンロードバッチ | － | Animaの公式モデル、派生モデルのダウンローダー |
+| カスタム `styles.csv` | － | Animaでの生成をサポートするスタイル集 |
+| Forge Neo 用推奨設定 | － | Animaで生成することを前提とした推奨の初期設定 |
+
+## 🔍 EasyReforge-Next との比較
+
+起動・更新・モデルダウンロード用のバッチ、フォルダ構成などは、[EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) を踏襲しています。
+
+| 機能・要素 | EasyReforge-Next | EasyForgeNeo (本作) |
+| :--- | :--- | :--- |
+| **メインWebUI** | [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) | [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) |
+| **サブWebUI** | － | [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) |
+| **対応モデル** | SD / SDXL のみ                                                                                  | **SD / SDXL、Anima、その他Forge Neoがサポートするモデル**                                                                     |
+| **特徴** | 従来の安定したreForge環境                                                                              | **最新のForge Neoベース ＋ Anima特化の初期設定・拡張機能**                                                            |
+
+### 拡張機能
+
+EasyForgeNeo（本作）にインストールされていない拡張機能はご自身で探してインストールするか、EasyRefoge-Nextを利用してください。
+
+| 🧩 EasyRefoge-Next | 🧩 EasyFogeNeo | 📝 Note |
+| --- | --- | --- |
+| [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus)    | [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus)    | Add image aspect ratio selector buttons                                         |
+| [Tag Autocomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete)                    | [TagComplete Neo](https://github.com/eduardoabreu81/sd-webui-tagcomplete-neo)                    | Autocompletion hints for recognized tags from Booru                             |
+| [Adetailer](https://github.com/Bing-su/adetailer)                                                | [AADetailer Forge Neo](https://github.com/abzaloff/aadetailer-neoforge)                          | Automatic masking and inpainting                                                |
+| [Model Keyword](https://github.com/mix1009/model-keyword)                                        | [Model Keyword](https://github.com/mix1009/model-keyword)                                        | Autofill keyword (trigger words)                                                |
+| [reForge-Sigmas\_merge](https://github.com/Panchovix/reForge-Sigmas_merge)                       | － | － |
+| [Dynamic Prompts extension](https://github.com/adieyal/sd-dynamic-prompts)                       | [Dynamic Prompts extension (Forge Neo対応版)](https://github.com/abzaloff/sd-dynamic-prompts)       | Random or combinatorial prompt generation with wildcards                        |
+| [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple)                           | [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple)                           | Generate different conditionings at specific regions                            |
+| [Easy Generate Forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever)             | [Repeat Generate for NEO](https://github.com/hirorohi03/repeat-generate-4NEO)                    | Repeat image generation automatically                                           |
+| [CD(Color/Detail) Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner)                        | － | － |
+| [Cutoff - Cutting Off Prompt Effect](https://github.com/hnmr293/sd-webui-cutoff)                 | － | － |
+| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker)               | － | － |
+| [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | Reduce image generation time                                                    |
+| [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight)                    | － | － |
+| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip)              | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip)                  | Negative effects within regular prompts                                         |
+| [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify)                     | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify)                     | Improve the display of image information                                        |
+| [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one)                       | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo)        | Improve the prompt/negative prompt input box                                    |
+| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper)                     | － | － |
+| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper)              | [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)                  | Browse, download, and manage your CivitAI models                                |
+| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP)         | － | － |
+| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger)                      | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO)                                          | Prompt engineering (Enhancer, Interrogator, etc.)                               |
+| [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension)                             | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension)                             | Generate detail tags about the character and add extra elements into the prompt |
+
+## 🖥️ 動作要件
+
+- NVIDIA GPU の Windows PCであること
+    - Forge Neo は NVIDIA 以外の GPU もサポートしていますが本作は未サポートです。
+- 20GB 以上の空きストレージがあること
+    - あくまで最低要件です。モデルや拡張機能を追加したり多くの画像を生成したりするにはより多くの容量が必要です。
+- フォルダ名にスペースや特殊文字を含めないこと
+- NVIDIA ドライバーのバージョンが580以上であること
+- アバストなどの Windows Diffender でないウィルスチェック無効化、VPN やプロキシの無効化が必要な可能性があります。
+
+## 🛠️ インストール方法
+
+まず、[EasyForgeNeoInstaller.bat](https://github.com/hirorohi03/EasyForgeNeo/blob/main/EasyForgeNeo/EasyForgeNeoInstaller.bat) を右クリックから保存します。
+
+次にパターンAまたはパターンBの方法でインストールします。
+
+### パターンA：新規にインストールする場合（[EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) 同等環境は後から追加可能）
+
+1. `C:/EasyForgeNeo/` などの浅いパスのインストール先の**空フォルダ**に `EasyForgeNeoInstaller.bat` を配置し、ダブルクリックして実行します。
+2. `動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）` で `Enter` します。
+
+### パターンB：既存の [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) 環境へ共存・追加インストールする場合
+
+> [!IMPORTANT]
+> - 事前に必ず [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) のフォルダ全体をバックアップしてください。
+> - `Model` フォルダのサイズが大きくてバックアップの容量や時間が無い場合は、インストールする間 [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) フォルダ外へ一旦移動退避しておくだけでも構いません。`OutputReforge` はジャンクションですのでそれ自体を移動退避しても無意味です。必ず内容（`txt2img-images` など）を移動してください。
+> - セットアップ後は [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) ではなく、EasyForgeNeoに組み込まれたEasyReforge-Nextと同等環境として動作します。reForge本体は変わりませんが、パッケージとしてのフォルダやバッチの構成が変わります。
+
+1. [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) と同じディレクトリ（`Download`や`OutputReforge`が存在する階層）に `EasyForgeNeoInstaller.bat` を配置し、ダブルクリックして実行します。
+2. `動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）` で `Enter` します。
+3. 既存の [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) のデータが削除されたり動作に問題が発生したりする可能性があるという注意メッセージが表示されたら、内容をよく確認して `YES` を入力してください。
+    - インストーラーを実行すると、既存のフォルダ（`Model, EasyTools, EasyReforge `等）自動的に検出し、ストレージを共有した状態でセットアップが完了します。
+
+> [!TIP]
+> - 動作が確認できましたら `EasyReforge.bak`、`EasyTools.bak` は削除して構いません。
+> - 生成画像の格納フォルダは `Images` です。既存の `OutputReforge` はジャンクションとして同じフォルダにリンクしていますが不要であれば削除して構いません。
+> - `Sample` は既存の [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) から更新されません。
+
+### パターンAとパターンBに共通の情報
+- インストーラーを管理者として実行 **しないで** ください。
+- **`WindowsによってPCが保護されました`** と表示されたら、 **`詳細表示`** から **`実行`** してください。
+- Anima用LoRAのダウンロードに **[Civitai](https://civitai.com/)** **APIキー** が必要ですので、画面の案内や **[ネット上のノウハウ](https://www.google.com/search?q=civitai+api+key)** に沿って入力してください。
+    - APIキーを入力しない場合でもAnima用のDiffusionモデル、TE、VAEはダウンロードされるため、Animaでのお試し画像生成は可能です。
+    - EasyReforge(-Next) ではインストール後に拡張機能のCivitai HelperでCivitai APIキーを設定する方式でしたが、EasyForgeNeoでは方式が変更されています。
+    - 逆にインストール時にCivitai APIキーが入力されていれば、拡張機能のCivitai Browserには自動でCivitai APIキーが設定されます。
+
+> [!TIP]
+> - GeForce RTX 30 シリーズ（Ampereアーキテクチャ、Compute Capability 8.6）以上のGPUを検知できた場合は、`--sage --flash --nunchaku` を有効にしてForge Neoをセットアップします。
+> - マルチGPU環境では正常に検知できない可能性があります（詳細な情報を提供いただければ対応を検討します）。
+
+## 🚀 起動方法
+
+インストール先にある以下いずれかのバッチを実行することでForge Neoが起動します。
+- `ForgeNeo.bat`：起動オプションなしの標準設定でForge Neoが起動します。
+- `ForgeNeo_Fast.bat`：`--pin-shared-memory` 等を有効にして起動します。
+
+> [!TIP]
+> - GeForce RTX 30 シリーズ（Ampereアーキテクチャ、Compute Capability 8.6）以上のGPUで Forge Neo を sageattension、flashattension 無効で起動する場合は、それぞれ `--disable-sage`、`--disable-flash` を起動オプションに追加してください。
+
+reForgeは以下で起動します（初回はセットアップが動作します）。
+- `Reforge.bat`：起動オプションなしの標準設定でreForgeが起動します。
+- `Reforge_Fast.bat`：sageattention等を有効にして起動します。画像生成時間が約10%削減します。
+
+自分で自由に起動オプションを指定したい場合は、`ForgeNeo_Fast.bat`、`Reforge_Fast.bat` それぞれを任意のファイル名でコピーして、ファイルの内容を書き換えて利用してください。コピーせずに既存のファイルの内容を書き換えて利用すると、EasyForgeNeo の更新時に巻き戻ってしまいます。
+
+## 🖼️ 使用方法
+
+パッケージとしての基本的な使用方法は[EasyReforge-Next](https://github.com/hirorohi03/EasyReforge/)を参考にしてください。
+
+その他は随時、[私の note 記事](https://note.com/hirorohi03)で紹介していく予定です。
+
+## 🔁 更新方法
+
+`Update.bat` ですべてのコンポーネントを更新します。
+- EasyTools、EasyForgeNeo を更新します。
+- Forge Neo本体および拡張機能を更新します。
+- （reForgeがセットアップ済みの場合）reForge本体および拡張機能を更新します。
+
+### Forge Neo本体、reForge本体のバージョン指定方法
+
+2つのバッチでForge Neo本体のバージョンを指定／解除することができます。
+
+Forge Neo本体のGit **コミットハッシュ値** で指定します。
+
+- `EasyForgeNeo\EasyForgeNeoVersionControl-Enable.bat`<BR>
+Forge Neo本体のコミットハッシュ値を入力して指定（入力内容の`EasyForgeNeo\ForgeNeo_Version.txt`が生成される）
+
+- `EasyReforge\EasyForgeNeoVersionControl-Disable.bat`<BR>
+Forge Neo本体本体のバージョン指定を解除（`EasyForgeNeo\ForgeNeo_Version.txt`が削除される）
+
+バージョンを変更する場合は `Update.bat` を実行してください。<BR>
+Forge Neo本体の**コミットハッシュ値**は、下図を参考にして[Forge Neo本体のコミットログ](https://github.com/Haoming02/sd-webui-forge-classic/commits/neo/)からコピー＆ペーストしてください。<P>
+![CommitHash](https://github.com/hirorohi03/EasyReforge/blob/main/Sample/Images_README/commit_hash.png)
+
+reForge本体のバージョン指定／解除も同様です。
+- `EasyForgeNeo\ReforgeVersionControl-Enable.bat`
+- `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
+
+## 📖 更新履歴
+
+### 2026/5/19
+
+- 初回リリース。
+
+## 🗺️ ロードマップ
+
+- ollama導入、LLMモデルダウンローダー
+
+## 🤝 開発・クレジット
+
+* **メインWebUI**: [Stable Diffusion WebUI Forge Neo](https://github.com/lllyasviel/stable-diffusion-webui-forge) (および拡張機能プロジェクト)
+
+* **サブWebUI**: [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (および拡張機能プロジェクト)
+
+* **メインモデル**: [Anima by circlestone-labs](https://huggingface.co/circlestone-labs/Anima)
+
+* **謝辞・コード引用**:
+
+  * 本プロジェクトは、**Zuntan氏**（[@Zuntan03](https://github.com/Zuntan03)）の開発された [EasyReforge](https://github.com/Zuntan03/EasyReforge) および [EasyTools](https://github.com/Zuntan03/EasyTools) のコードを数多く利用・参考にさせていただいております。素晴らしい成果物を公開されている氏に深く感謝申し上げます。
+
+* **開発元**: [hirorohi03](https://github.com/hirorohi03)
+
+## ⚠️ 免責事項・ライセンス
+
+本ツールは各上流リポジトリおよびモデルのライセンス（CreativeML Open RAIL-M、MIT License等）に準拠します。ツール自体の利用に伴ういかなるトラブルについても、開発者は責任を負いかねますのであらかじめご了承ください。

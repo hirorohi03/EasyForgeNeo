@@ -1,0 +1,1 @@
+Module: inpaint_only+lama, Model: Inpaint_Kataragi [47d4edb1], Weight: 1, Resize Mode: Crop and Resize, Processor Res: 0.5, Threshold A: 0.5, Threshold B: 0.5, Guidance Start: 0, Guidance End: 0.2, Pixel Perfect: False, Control Mode: Balanced, Hr Option: Both

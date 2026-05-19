@@ -1,0 +1,40 @@
+name: Feature request（新機能リクエスト）
+description: Suggest an idea for this project（このプロジェクトへのアイデアを提案する）
+title: "[Feature Request]: "
+labels: ["enhancement"]
+
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this ?（これに関する既知の問題はありますか？）
+      description: Please search to see if an issue already exists for the feature you want, and that it's not implemented in a recent commit.（ご希望の機能に関するissueがすでに存在しないか、また最近のコミットで実装されていないか、検索してご確認ください。）
+      options:
+        - label: I have searched the existing issues and checked the recent builds/commits.（既存のissuesを検索し、最近のコミットを確認しました。）
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        > Please fill this form with as much information as possible, provide screenshots and/or illustrations of the feature if possible.
+        > このフォームにはできるだけ多くの情報を記入してください。また、可能であればその機能のスクリーンショットや図解を添付してください。
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would your feature do ?（その機能はどのような働きをするのでしょうか？）
+      placeholder: |
+        Tell us about your feature in a very clear and simple way, and what problem it would solve.
+        その機能について、できるだけわかりやすく簡潔に説明してください。また、それがどのような問題を解決するのかについても教えてください。
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Scenario when this would be used（この機能が使用される場面）
+      placeholder: |
+        What is the scenario this would be used in? Why is this important to users.
+        これはどのような場面で活用されるのでしょうか？また、ユーザーにとってなぜ重要なのでしょうか。
+    validations:
+      required: true
+  - type: textarea
+    id: misc
+    attributes:
+      label: Additional information（補足情報）

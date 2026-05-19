@@ -1,0 +1,15 @@
+﻿name,prompt,negative_prompt
+"Anima[30]: ER SDE, Simple 📋↙️","masterpiece, best quality, score_7, year 2025, highres, absurdres,
+Negative prompt: worst quality, low quality, score_1, score_2, score_3, blurry, jpeg artifacts, sepia
+Steps: 30, Sampler: ER SDE, Schedule type: Simple, CFG scale: 4, Shift: 3, Model: anima-base-v1.0",
+"Anima Spectrum[30]: ER SDE, Simple 📋↙️","masterpiece, best quality, score_7, year 2025, highres, absurdres,
+Negative prompt: worst quality, low quality, score_1, score_2, score_3, blurry, jpeg artifacts, sepia
+Steps: 30, Sampler: ER SDE, Schedule type: Simple, CFG scale: 4, Shift: 3, Model: anima-base-v1.0, spec_enable: True, spec_w: 0.25, spec_m: 6, spec_lam: 0.5, spec_window_size: 2, spec_flex_window: 0, spec_warmup_steps: 6, spec_stop_caching_step: 0.9, spec_enable_calibration: True, spec_calibration_strength: 0.5",
+"Anima Turbo[12]: ER SDE, Simple 📋↙️","masterpiece, best quality, score_7, year 2025, highres, absurdres, <lora:anima-turbo-lora-v0.1:1>,
+Steps: 12, Sampler: ER SDE, Schedule type: Simple, CFG scale: 1, Shift: 3, Model: anima-base-v1.0",
+"Anima Turbo[8]: ER SDE, Simple 📋↙️","masterpiece, best quality, score_7, year 2025, highres, absurdres, <lora:anima-turbo-lora-v0.1:1>,
+Steps: 8, Sampler: ER SDE, Schedule type: Simple, CFG scale: 1, Shift: 3, Model: anima-base-v1.0",
+"Anima DMD2[8]: LCM, Simple 📋↙️","masterpiece, best quality, score_7, year 2025, highres, absurdres, <lora:Cosmos-Predict2.5-2B-base-distilled-LoRA:1>
+Steps: 8, Sampler: LCM, Schedule type: Simple, CFG scale: 1, Shift: 3, Model: anima-base-v1.0",
+"Anima Turbo Spectrum[12]: ER SDE, Simple 📋↙️","masterpiece, best quality, score_7, year 2025, highres, absurdres, <lora:anima-turbo-lora-v0.1:1>,
+Steps: 12, Sampler: ER SDE, Schedule type: Simple, CFG scale: 1, Shift: 3, Model: anima-base-v1.0, spec_enable: True, spec_w: 0.25, spec_m: 6, spec_lam: 0.5, spec_window_size: 2, spec_flex_window: 0, spec_warmup_steps: 2, spec_stop_caching_step: 0.9, spec_enable_calibration: True, spec_calibration_strength: 0.5",

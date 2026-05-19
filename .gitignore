@@ -1,0 +1,11 @@
+﻿/EasyTools/
+/EasyTools.bak/
+/EasyReforge.bak/
+/EasyForgeNeo/vc_redist.x64.exe
+/EasyForgeNeo/ForgeNeo/Update_DisableMinimumDownload.txt
+/Images/
+/Model/**/*
+/OutputReforge/
+/Sample/
+/stable-diffusion-webui-reForge*/
+/sd-webui-forge-neo*/
