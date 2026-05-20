@@ -75,29 +75,29 @@ Zuntan氏（[@Zuntan03](https://github.com/Zuntan03)）が開発された [Stabl
 
 EasyForgeNeo（本作）にインストールされていない拡張機能はご自身で探してインストールするか、EasyRefoge-Nextを利用してください。
 
-| 🧩 EasyRefoge-Next | 🧩 EasyFogeNeo | 📝 Note |
+| 🧩 EasyRefoge-Next | 🧩 EasyFogeNeo (本作) | 📝 Note |
 | --- | --- | --- |
-| [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus) | [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus) | Add image aspect ratio selector buttons |
-| [Tag Autocomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete) | [TagComplete Neo](https://github.com/eduardoabreu81/sd-webui-tagcomplete-neo) | Autocompletion hints for recognized tags from Booru |
-| [Adetailer](https://github.com/Bing-su/adetailer) | [AADetailer Forge Neo](https://github.com/abzaloff/aadetailer-neoforge) | Automatic masking and inpainting |
-| [Model Keyword](https://github.com/mix1009/model-keyword) | [Model Keyword](https://github.com/mix1009/model-keyword) | Autofill keyword (trigger words) |
-| [reForge-Sigmas\_merge](https://github.com/Panchovix/reForge-Sigmas_merge) | － | － |
-| [Dynamic Prompts extension](https://github.com/adieyal/sd-dynamic-prompts) | [Dynamic Prompts extension (Forge Neo対応版)](https://github.com/abzaloff/sd-dynamic-prompts) | Random or combinatorial prompt generation with wildcards |
-| [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple) | [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple) | Generate different conditionings at specific regions |
-| [Easy Generate Forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever) | [Repeat Generate for NEO](https://github.com/hirorohi03/repeat-generate-4NEO) | Repeat image generation automatically |
-| [CD(Color/Detail) Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) | － | － |
-| [Cutoff - Cutting Off Prompt Effect](https://github.com/hnmr293/sd-webui-cutoff) | － | － |
-| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | － | － |
-| [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | Reduce image generation time |
-| [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | － | － |
-| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip) | Negative effects within regular prompts |
-| [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Improve the display of image information |
-| [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | Improve the prompt/negative prompt input box |
-| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | － | － |
-| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) | Browse, download, and manage your CivitAI models |
-| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | － | － |
-| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
-| [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Generate detail tags about the character and add extra elements into the prompt |
+| [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus) | ← | 解像度とアスペクト比ボタンを追加 |
+| [Tag Autocomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete) | [TagComplete Neo](https://github.com/eduardoabreu81/sd-webui-tagcomplete-neo) | Booruタグの補完入力 |
+| [Adetailer](https://github.com/Bing-su/adetailer) | [AADetailer Forge Neo](https://github.com/abzaloff/aadetailer-neoforge) | 自動マスキングとインペインティング |
+| [Model Keyword](https://github.com/mix1009/model-keyword) | ← | キーワード（トリガーワード）の自動入力 |
+| [reForge-Sigmas\_merge](https://github.com/Panchovix/reForge-Sigmas_merge) | N/A | Sigmaのマージとカスタマイズ |
+| [Dynamic Prompts extension](https://github.com/adieyal/sd-dynamic-prompts) | [Dynamic Prompts extension (Forge Neo対応版)](https://github.com/abzaloff/sd-dynamic-prompts) | ワイルドカードを用いたランダムプロンプト生成|
+| [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple) | ← | 領域毎に異なるコンディショニングを生成 |
+| [Easy Generate Forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever) | [Repeat Generate for NEO](https://github.com/hirorohi03/repeat-generate-4NEO) | 自動で繰り返し生成 |
+| [CD(Color/Detail) Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) | N/A | カラー／ディティール調整 |
+| [Cutoff - Cutting Off Prompt Effect](https://github.com/hnmr293/sd-webui-cutoff) | N/A | トークンの影響範囲を制限 |
+| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | N/A | Enableボタンに背景色を付与 |
+| [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | ← | 生成時間を短縮 |
+| [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | N/A | LoRA強度をブロック単位で調整 |
+| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip) | ポジティブプロンプト内でのネガティブ効果 |
+| [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | ← | 画像情報表示の美化 |
+| [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | プロンプト入力欄を改善 |
+| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | LoRAの重みを視覚的に調整 |
+| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) | CivitAIのモデルを閲覧、ダウンロード、管理 |
+| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | UIを日本語化 |
+| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | プロンプトエンジニアリング（Enhancer、Interrogator など） |
+| [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | ← | キャラクターの詳細や要素のタグをプロンプトに追加 |
 
 ## 🖥️ 動作要件
 

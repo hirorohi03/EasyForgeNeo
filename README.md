@@ -75,29 +75,29 @@ The batch files for launching, updating, downloading models, as well as the fold
 
 If there are extensions you need that are not pre-installed in EasyForgeNeo, please find and install them manually, or use EasyReforge-Next.
 
-| 🧩 EasyRefoge-Next | 🧩 EasyFogeNeo | 📝 Note |
+| 🧩 EasyRefoge-Next | 🧩 EasyForgeNeo (This Project) | 📝 Note |
 | --- | --- | --- |
-| [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus) | [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus) | Add image aspect ratio selector buttons |
+| [Aspect Ratio and Resolution Buttons](https://github.com/altoiddealer/--sd-webui-ar-plusplus) | Same as left | Add image aspect ratio selector buttons |
 | [Tag Autocomplete](https://github.com/DominikDoom/a1111-sd-webui-tagcomplete) | [TagComplete Neo](https://github.com/eduardoabreu81/sd-webui-tagcomplete-neo) | Autocompletion hints for recognized tags from Booru |
 | [Adetailer](https://github.com/Bing-su/adetailer) | [AADetailer Forge Neo](https://github.com/abzaloff/aadetailer-neoforge) | Automatic masking and inpainting |
-| [Model Keyword](https://github.com/mix1009/model-keyword) | [Model Keyword](https://github.com/mix1009/model-keyword) | Autofill keyword (trigger words) |
-| [reForge-Sigmas\_merge](https://github.com/Panchovix/reForge-Sigmas_merge) | － | － |
+| [Model Keyword](https://github.com/mix1009/model-keyword) | Same as left | Autofill keyword (trigger words) |
+| [reForge-Sigmas\_merge](https://github.com/Panchovix/reForge-Sigmas_merge) | N/A | Merge and customize Sigmas schedules |
 | [Dynamic Prompts extension](https://github.com/adieyal/sd-dynamic-prompts) | [Dynamic Prompts extension (Forge Neo Support)](https://github.com/abzaloff/sd-dynamic-prompts) | Random or combinatorial prompt generation with wildcards |
-| [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple) | [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple) | Generate different conditionings at specific regions |
+| [Forge Attention Couple](https://github.com/Haoming02/sd-forge-couple) | Same as left | Generate different conditionings at specific regions |
 | [Easy Generate Forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever) | [Repeat Generate for NEO](https://github.com/hirorohi03/repeat-generate-4NEO) | Repeat image generation automatically |
-| [CD(Color/Detail) Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) | － | － |
-| [Cutoff - Cutting Off Prompt Effect](https://github.com/hnmr293/sd-webui-cutoff) | － | － |
-| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | － | － |
-| [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | Reduce image generation time |
-| [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | － | － |
+| [CD(Color/Detail) Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) | N/A | Color/Detail control |
+| [Cutoff - Cutting Off Prompt Effect](https://github.com/hnmr293/sd-webui-cutoff) | N/A | Limits the tokens' influence scope |
+| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | N/A | Background coloring to ”Enable" buttons |
+| [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | Same as left | Reduce image generation time |
+| [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | N/A | LoRA strength can be set block by block |
 | [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip) | Negative effects within regular prompts |
-| [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Improve the display of image information |
+| [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Same as left | Improve the display of image information |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | Improve the prompt/negative prompt input box |
-| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | － | － |
+| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | － | Visually adjuster the weights of LoRA |
 | [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) | Browse, download, and manage your CivitAI models |
-| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | － | － |
+| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | － | Localize UI into Japanese |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
-| [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Generate detail tags about the character and add extra elements into the prompt |
+| [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
 
 ## 🖥️ System Requirements
 
@@ -239,6 +239,6 @@ If you have any questions, encounter bugs, or have feature requests regarding th
     - This project utilizes and references a substantial amount of code from [EasyReforge](https://github.com/Zuntan03/EasyReforge) and [EasyTools](https://github.com/Zuntan03/EasyTools) developed by **Mr. Zuntan**（[@Zuntan03](https://github.com/Zuntan03)）. I would like to express my deepest gratitude to him for sharing his wonderful work with the community.
 - **Developer**: [hirorohi03](https://github.com/hirorohi03)
 
-## ⚠️⚖️ Disclaimer & License
+## ⚖️ Disclaimer & License
 
 This tool complies with the licenses of each upstream repository and model (e.g., CreativeML Open RAIL-M, MIT License, etc.). Please note that the developer assumes no responsibility for any issues or troubleshooting arising from the use of this tool.
