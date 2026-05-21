@@ -8,7 +8,7 @@
 
 <div align="center">
 
- # EasyForgeNeo
+ # EasyForgeNeo (for Anima)
 
 [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) をコアとしたAnima画像生成環境の１クリックインストーラー、**Windows** 用 🔹 Nvidia GPU 対応
 
@@ -74,6 +74,9 @@ Zuntan氏（[@Zuntan03](https://github.com/Zuntan03)）が開発された [Stabl
 ### 拡張機能
 
 EasyForgeNeo（本作）にインストールされていない拡張機能はご自身で探してインストールするか、EasyRefoge-Nextを利用してください。
+> [!TIP]
+> - N/Aの部分は必ずしもForge Neoで動作するextensionが無いという意味ではありません。複数の候補があり、このパッケージでプレインストールするものが決められないものもあります。
+> - 自分でインストールされる場合は、[Forge Neo Discussion #1128](https://github.com/Haoming02/sd-webui-forge-classic/discussions/1128)が参考になるかもしれません。
 
 | 🧩 EasyRefoge-Next | 🧩 EasyFogeNeo (本作) | 📝 Note |
 | --- | --- | --- |
@@ -206,8 +209,16 @@ reForge本体のバージョン指定／解除も同様です。
 
 ### 2026/5/21
 
-- `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
-- `Download\DiffusionModels\Anima_Custom\copycat-anima.bat` のバージョンを更新しました。
+- Ollama起動バッチ `OllamaStart.bat` を追加しました。
+    - システムにOllamaがインストール済みの場合はそちらを利用します。（`ollama ps` を実行）
+    - Ollamaが未インストールの場合は、`EasyTools\Ollama\env` にOllama Portableをインストールします。
+    - [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) から利用することを想定しています。チャットAIとして利用するバッチはありません。
+- Ollama用LLM/VLMモデルダウンロードバッチ `Download\Ollama` を追加しました。
+    - システムにOllamaがインストール済みの場合はそちらの指定先に保存されます。（標準では `C:\Users\ユーザー名\.ollama\models`）
+    - EasyForgeNeoでOllamaをインストールした場合は、`Model\Ollama` に保存されます。
+- Anima派生モデルのダウンロードバッチを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\copycat-anima.bat` のバージョンを更新しました。
 
 ### 2026/5/19
 
@@ -215,8 +226,8 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 🗺️ ロードマップ
 
-- ScribeNEO用のollama導入バッチ
-- LLMモデルのダウンロードバッチ
+- ~ScribeNEO用のollama導入バッチ~
+- ~LLMモデルのダウンロードバッチ~
 - メッセージの英語化
 - gitのタグによるForge Neoのバージョン指定／解除
 - uv対応

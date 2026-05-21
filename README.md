@@ -8,7 +8,7 @@
 
 <div align="center">
 
- # EasyForgeNeo
+ # EasyForgeNeo (for Anima)
 
 A 1-click installer for an Anima image generation environment centered around [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo), designed for **Windows** 🔹 Nvidia GPU.
 
@@ -74,6 +74,9 @@ The batch files for launching, updating, downloading models, as well as the fold
 ### Extensions
 
 If there are extensions you need that are not pre-installed in EasyForgeNeo, please find and install them manually, or use EasyReforge-Next.
+> [!TIP]
+> - The "N/A" sections don't necessarily mean that there are no extensions compatible with Forge Neo. In some cases, there are multiple candidates, making it impossible to decide which one should be pre-installed in this package.
+> - If you're installing them yourself, [Forge Neo Discussion #1128](https://github.com/Haoming02/sd-webui-forge-classic/discussions/1128) might be a helpful reference.
 
 | 🧩 EasyRefoge-Next | 🧩 EasyForgeNeo (This Project) | 📝 Note |
 | --- | --- | --- |
@@ -206,9 +209,17 @@ The process is identical for pinning/unpinning the reForge core version:
 ## 📖 Changelog
 
 ### 2026/5/21
-
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
-- Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
+ 
+- Added the Ollama startup batch file `OllamaStart.bat`.
+    - If Ollama is already installed on the system, it will be used. (Runs `ollama ps`)
+    - If Ollama is not installed, Ollama Portable will be installed in `EasyTools\Ollama\env`.
+    - This is intended to be used via [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO). There is no batch for using it as a chat AI.
+- Added the Ollama LLM/VLM model download batch file `Download\Ollama`.
+    - If Ollama is already installed on the system, models will be saved to its designated location. (Default is `C:\Users\Username\.ollama\models`)
+    - If Ollama was installed via EasyForgeNeo, models will be saved in `Model\Ollama`.
+- Updated the download batch for Anima custom models.
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
 
 ### 2026/05/19
 
@@ -216,8 +227,8 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 🗺️ Roadmap
 
-- Ollama integration batch file for ScribeNEO
-- Download batch file for LLM models
+- ~Ollama integration batch file for ScribeNEO~
+- ~Download batch file for LLM models~
 - Translating messages into English
 - Specifying/unpinning Forge Neo versions using Git tags
 - `uv` package manager support
