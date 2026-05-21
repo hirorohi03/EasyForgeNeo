@@ -205,7 +205,13 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/5/21
+
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+- Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
+
 ### 2026/05/19
+
 - Initial Release.
 
 ## 🗺️ Roadmap

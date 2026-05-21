@@ -204,6 +204,11 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/5/21
+
+- `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+- `Download\DiffusionModels\Anima_Custom\copycat-anima.bat` のバージョンを更新しました。
+
 ### 2026/5/19
 
 - 初回リリース。
