@@ -5,7 +5,7 @@ set CIVITAI_MODEL_DOWNLOAD=%EASY_TOOLS%\Civitai\Civitai_ModelDownload.bat
 pushd %~dp0..\..\..\Model\DiffusionModels
 
 @REM https://civitai.red/models/2385278/
-call %CIVITAI_MODEL_DOWNLOAD% Anima_Custom\ animayume_v04.safetensors 2385278 2851312
+call %CIVITAI_MODEL_DOWNLOAD% Anima_Custom\ animayume_v05.safetensors 2385278 2963515
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem %~dp0..\..\..\Model\DiffusionModels
