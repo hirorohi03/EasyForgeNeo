@@ -207,6 +207,10 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/5/22
+
+- `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` を追加しました。
+
 ### 2026/5/21
 
 - Ollama起動バッチ `OllamaStart.bat` を追加しました。

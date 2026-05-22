@@ -208,6 +208,10 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/5/22
+
+- Added `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
+
 ### 2026/5/21
  
 - Added the Ollama startup batch file `OllamaStart.bat`.
