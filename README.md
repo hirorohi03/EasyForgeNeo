@@ -18,6 +18,13 @@ Dedicated to **Mr. Zuntan**（[@Zuntan03](https://github.com/Zuntan03)）
 
 ***
 
+> [!IMPORTANT]
+> - From approximately on May 23, 2026, 3:34 AM GMT to approximately on May 23, 2026, 1:56 PM GMT: Due to a Git operation error, the `Images` and `Model`’ folders in the repository were missing. It appears that anyone who attempted a new installation during this time likely encountered an error as a result.
+> - I apologize for the inconvenience.
+> - Users who have already installed and updated it using `Update.bat` or `git pull` should not be experiencing any issues since these folders were specified in `.gitignore`.
+
+***
+
 `EasyForgeNeo` is a 1-click installer to deploy [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) (Forge Neo) on Windows environments equipped with Nvidia GPUs.
 
 No manual setup of Git or Python is required.
@@ -123,7 +130,7 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 ### Pattern A: Fresh Installation (Equivalent environment for EasyReforge-Next can be added later)
 
 1. Place `EasyForgeNeoInstaller.bat` into a shallow path directory inside an **empty folder** (e.g., `C:/EasyForgeNeo/`), and double-click to run it.
-2. When prompted: `動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）`, press `Enter`.
+2. When prompted: `Download Model etc. Are you sure? [y/n] (default: y)`, press `Enter`.
 
 ### Pattern B: Coexistence / Additional Installation with an existing EasyReforge-Next environment
 
@@ -133,7 +140,7 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 > - After setup, the environment will run as an integrated EasyReforge-Next equivalent within EasyForgeNeo, rather than standalone. The core reForge system remains unchanged, but the package folder structure and batch files will be restructured.
 
 1. Place `EasyForgeNeoInstaller.bat` into the exact same directory where [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) is located (the parent directory containing `Download` and `OutputReforge`). Double-click to run it.
-2. When prompted: `動作に必要なモデルなどをダウンロードします。よろしいですか？ [y/n]（空欄なら y）`, press `Enter`.
+2. When prompted: `Download Model etc. Are you sure? [y/n] (default: y)`, press `Enter`.
 3. A warning message will appear stating that existing data from [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) might be deleted or run into unexpected issues. Review the warning carefully and type `YES` to proceed.
     - The installer will automatically detect existing folders (`Model`, `EasyTools`, `EasyReforge`, etc.) and finish setting up the environment with shared storage.
 

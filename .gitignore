@@ -3,8 +3,12 @@
 /EasyReforge.bak/
 /EasyForgeNeo/vc_redist.x64.exe
 /EasyForgeNeo/ForgeNeo/Update_DisableMinimumDownload.txt
-/Images/
-/Model/**/*
+/Images/*
+!/Images/**/
+!/Images/**/*.bat
+/Model/*
+!/Model/**/
+!/Model/**/*.bat
 /OutputReforge/
 /Sample/
 /stable-diffusion-webui-reForge*/
