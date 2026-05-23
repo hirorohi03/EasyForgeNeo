@@ -115,7 +115,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 
 ## 🛠️ Installation
 
-First, right-click and save [EasyForgeNeoInstaller.bat](https://github.com/hirorohi03/EasyForgeNeo/blob/main/EasyForgeNeo/EasyForgeNeoInstaller.bat) to your PC.
+First, right-click and save [EasyForgeNeoInstaller.bat](https://github.com/hirorohi03/EasyForgeNeo/raw/main/EasyForgeNeo/EasyForgeNeoInstaller.bat) to your PC.
 
 Then, proceed with either **Pattern A** or **Pattern B**.
 
