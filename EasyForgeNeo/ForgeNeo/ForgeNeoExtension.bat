@@ -52,12 +52,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% bluelovers sd-webui-pnginfo-beautify
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM https://github.com/eduardoabreu81/sd-civitai-browser-neo
-call %GITHUB_CLONE_OR_PULL% eduardoabreu81 sd-civitai-browser-neo
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
-echo xcopy /SQY %~dp0src\sd-civitai-browser-neo\*.* sd-civitai-browser-neo\
-xcopy /SQY %~dp0src\sd-civitai-browser-neo\*.* sd-civitai-browser-neo\
+@REM https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE
+call %GITHUB_CLONE_OR_PULL% Replactionap Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/SiliconeShojo/ScribeNEO

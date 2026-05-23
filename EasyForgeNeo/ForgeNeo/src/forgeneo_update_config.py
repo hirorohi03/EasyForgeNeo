@@ -10,6 +10,7 @@ class ForgeNeoConfig:
     def __init__(self, cfg_path):
         self.updaters = {
             "0.0.0": self.update_0_0_0,
+            "0.1.0": self.update_0_1_0,
         }
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
@@ -90,12 +91,15 @@ class ForgeNeoConfig:
         cfg["ad_save_images_before"] = True # Save images before ADetailer
         cfg["dp_write_raw_template"] = True # Save template to metadata: Write prompt template into the PNG metadata
 
+        cfg["disabled_extensions"] = ["model-keyword"]
+
+    def update_0_1_0(self, cfg):
+        cfg["easy_forge_neo_config_version"] = "0.1.1"
+
         api_file = "../EasyTools/Civitai/CivitaiApiKey.txt"
         if os.path.exists(api_file):
             with open(api_file, "r", encoding="utf-8") as f:
-                cfg["custom_api_key"] = f.readline().rstrip("\r\n") # Personal CivitAI API key
-
-        cfg["disabled_extensions"] = ["model-keyword"]
+                cfg["ch_civiai_api_key"] = f.readline().rstrip("\r\n") # API key for authenticating with Civitai (Helper)
 
         self.backup_styles_csv()
 
