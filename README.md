@@ -97,7 +97,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Same as left | Improve the display of image information |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | Improve the prompt/negative prompt input box |
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | － | Visually adjuster the weights of LoRA |
-| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) | Browse, download, and manage your CivitAI models |
+| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | ~[CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)~<BR> [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | Browse, download, and manage your CivitAI models |
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | － | Localize UI into Japanese |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
@@ -116,6 +116,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 ## 🛠️ Installation
 
 First, right-click and save [EasyForgeNeoInstaller.bat](https://github.com/hirorohi03/EasyForgeNeo/raw/main/EasyForgeNeo/EasyForgeNeoInstaller.bat) to your PC.
+> - May 23, 2026, 3:34 AM GMT: The link above was incorrect, so It has been corrected.
 
 Then, proceed with either **Pattern A** or **Pattern B**.
 
@@ -208,6 +209,14 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/5/23
+
+- I have changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
+    - If it is already installed, Civitai Browser Neo will not be automatically removed. If you no longer need it, please delete the `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` folder using File Explorer.
+    - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
+    - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.
+
+Translated with DeepL.com (free version)
 ### 2026/5/22
 
 - Added `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
