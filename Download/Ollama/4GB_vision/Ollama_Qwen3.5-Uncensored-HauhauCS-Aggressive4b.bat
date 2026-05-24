@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 > NUL
-set EASY_TOOLS=%~dp0..\..\EasyTools
+set EASY_TOOLS=%~dp0..\..\..\EasyTools
 
 @REM Ollamaサービスチェック
 ollama.exe ps > nul 2>&1
