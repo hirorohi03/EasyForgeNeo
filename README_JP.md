@@ -216,6 +216,10 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/5/24
+
+- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+
 ### 2026/5/23
 
 - 拡張機能の [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)  を [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) に変更しました。

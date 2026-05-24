@@ -216,6 +216,10 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/5/24
+
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+
 ### 2026/5/23
 
 - I have changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
@@ -223,7 +227,6 @@ The process is identical for pinning/unpinning the reForge core version:
     - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
     - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.
 
-Translated with DeepL.com (free version)
 ### 2026/5/22
 
 - Added `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
