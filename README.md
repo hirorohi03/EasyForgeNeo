@@ -55,8 +55,6 @@ Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://g
 
 ## **📦 Components**
 
-**Core Components**
-
 | **🔧 Component** | **🆕 Version** | **📝 Description** |
 | :--- | :--- | :--- |
 | [Git](https://git-scm.com/) | 2.53.0.3 | Installed/updated as needed |
@@ -69,6 +67,12 @@ Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://g
 
 ## 🔍 Comparison with EasyReforge-Next
 
+### Basic Information
+
+<details>
+<summary><b>Click to expand</b></summary>
+<div style="padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 The batch files for launching, updating, downloading models, as well as the folder structure, follow the design of [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge).
 
 | Feature / Element | EasyReforge-Next | EasyForgeNeo (This Project) |
@@ -78,7 +82,14 @@ The batch files for launching, updating, downloading models, as well as the fold
 | **Supported Models** | SD / SDXL only | **SD / SDXL, Anima, and other models supported by Forge Neo** |
 | **Characteristics** | Traditional and stable reForge environment | **Latest Forge Neo base + Anima-specific initial settings & extensions** |
 
+</div>
+</details>
+
 ### Extensions
+
+<details>
+<summary><b>Click to expand</b></summary>
+<div style="padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 If there are extensions you need that are not pre-installed in EasyForgeNeo, please find and install them manually, or use EasyReforge-Next.
 > [!TIP]
@@ -109,7 +120,14 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
 
+</div>
+</details>
+
 ## 🖥️ System Requirements
+
+<details>
+<summary><b>Click to expand</b></summary>
+<div style="padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 - **Windows PC with an NVIDIA GPU**
     - *Note: While Forge Neo itself supports non-NVIDIA GPUs, this installer package does not support them.*
@@ -120,10 +138,14 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 - You may need to temporarily disable non-Windows Defender antivirus software (such as Avast), VPNs, or proxies.
 - Other requirements comply with the official requirements of [Stable Diffusion WebUI Forge Neo](https://github.com/lllyasviel/stable-diffusion-webui-forge).
 
+</div>
+</details>
+
 ## 🛠️ Installation
 
 First, right-click and save [EasyForgeNeoInstaller.bat](https://github.com/hirorohi03/EasyForgeNeo/raw/main/EasyForgeNeo/EasyForgeNeoInstaller.bat) to your PC.
-> - May 23, 2026, 3:34 AM GMT: The link above was incorrect, so It has been corrected.
+> [!IMPORTANT]
+> - May 23, 2026, 3:34 AM GMT: The link was incorrect, so It has been corrected.
 
 Then, proceed with either **Pattern A** or **Pattern B**.
 
@@ -144,10 +166,16 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 3. A warning message will appear stating that existing data from [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) might be deleted or run into unexpected issues. Review the warning carefully and type `YES` to proceed.
     - The installer will automatically detect existing folders (`Model`, `EasyTools`, `EasyReforge`, etc.) and finish setting up the environment with shared storage.
 
+<details>
+<summary><b>TIPS (Click to expand)</b></summary>
+
 > [!TIP]
 > - Once you have verified that everything works properly, you can safely delete `EasyReforge.bak` and `EasyTools.bak`.
 > - Generated images are stored in the `Images` folder. The existing `OutputReforge` folder remains as a junction link pointing to the same folder; you can delete it if it is no longer needed.
 > - The `Sample` folder will not be updated from the existing [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge).
+
+</div>
+</details>
 
 ### Information Common to Both Pattern A and Pattern B
 - **DO NOT** run the installer as an administrator.
@@ -157,9 +185,15 @@ Then, proceed with either **Pattern A** or **Pattern B**.
     - While EasyReforge(-Next) allowed setting the Civitai API Key via the Civitai Helper extension post-installation, EasyForgeNeo has changed this method.
     - Conversely, if you enter your Civitai API Key during installation, it will be automatically configured within the CivitAI Browser extension.
 
+<details>
+<summary><b>TIPS (Click to expand)</b></summary>
+
 > [!TIP]
 > - If a GeForce RTX 30 series GPU (Ampere architecture, Compute Capability 8.6) or higher is detected, Forge Neo will be automatically configured with `--sage --flash --nunchaku` enabled.
 > - Detection may not work correctly in multi-GPU environments (we will consider addressing this if detailed feedback/information is provided).
+
+</div>
+</details>
 
 ## 🚀 How to Launch
 
@@ -167,8 +201,14 @@ You can launch Forge Neo by running any of the following batch files in the inst
 - `ForgeNeo.bat`: Launches Forge Neo with standard settings (no extra launch options).
 - `ForgeNeo_Fast.bat`: Launches Forge Neo with optimizations such as `--pin-shared-memory` enabled.
 
+<details>
+<summary><b>TIPS (Click to expand)</b></summary>
+
 > [!TIP]
 > - If you are using a GeForce RTX 30 series or higher GPU and wish to launch Forge Neo with `sageattention` and `flashattention` disabled, add `--disable-sage` or `--disable-flash` to your custom launch arguments.
+
+</div>
+</details>
 
 To launch reForge (it will run a setup process on the first launch):
 - `Reforge.bat`: Launches reForge with standard settings.
@@ -176,9 +216,14 @@ To launch reForge (it will run a setup process on the first launch):
 
 If you want to customize your launch arguments freely, copy either `ForgeNeo_Fast.bat` or `Reforge_Fast.bat` to a new filename and edit its contents. Do not edit the original files directly, as your changes will be overwritten when updating EasyForgeNeo.
 
+<details>
+<summary><b>TIPS (Click to expand)</b></summary>
+
 > [!TIP]
 > - Forge Neo and reForge can be run simultaneously. Forge Neo launches on port `7860`, and reForge launches on port `7870` (Please be mindful of your VRAM and system memory usage).
-> - Upon launching Forge Neo, a Windows Firewall prompt for `aria2.exe` may appear. This is for [aria2](https://aria2.github.io/), the downloader embedded in the CivitAI Browser extension. Disallowing it may affect the functionality of CivitAI Browser, so please decide whether to grant access at your own discretion. If you deny it initially and wish to allow it later, you can adjust your Windows Defender Firewall settings accordingly.
+
+</div>
+</details>
 
 ## 🖼️ Usage
 
@@ -207,7 +252,15 @@ Unpins the version specification for the Forge Neo core (deletes `EasyForgeNeo\F
 
 To apply the version changes, run `Update.bat`. <BR>
 Please copy and paste the **commit hash** from the [Official Forge Neo Commit Logs](https://github.com/Haoming02/sd-webui-forge-classic/commits/neo/) as shown in the image below.<P>
+
+<details>
+<summary><b>Sample image (Click to expand)</b></summary>
+<div style="padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ![CommitHash](https://github.com/hirorohi03/EasyReforge/blob/main/Sample/Images_README/commit_hash.png)
+
+</div>
+</details>
 
 The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Enable.bat`
@@ -244,21 +297,37 @@ The process is identical for pinning/unpinning the reForge core version:
 - Added the Ollama LLM/VLM model download batch file `Download\Ollama`.
     - If Ollama is already installed on the system, models will be saved to its designated location. (Default is `C:\Users\Username\.ollama\models`)
     - If Ollama was installed via EasyForgeNeo, models will be saved in `Model\Ollama`.
+> [!IMPORTANT]
+> - When you run an Ollama-related batch file for the first time, a Windows Firewall permission prompt for `ollama.exe` will appear. This is an “Inbound Rule” that allows `ollama.exe` to download models. If you did not grant permission in this prompt but later decide to allow it, please go to the Windows Defender Firewall settings and allow communication for `ollama.exe`.
 - Updated the download batch for Anima custom models.
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
+
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/05/19
 
 - Initial Release.
 
+</div>
+</details>
+
 ## 🗺️ Roadmap
+
+<details>
+<summary><b>Click to expand</b></summary>
+<div style="padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 - ~Ollama integration batch file for ScribeNEO~
 - ~Download batch file for LLM models~
 - Translating messages into English
 - Specifying/unpinning Forge Neo versions using Git tags
 - `uv` package manager support
+
+</div>
+</details>
 
 ## ⚠️ Known Limitations
 
