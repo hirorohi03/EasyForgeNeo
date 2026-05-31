@@ -269,6 +269,10 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/5/31
+
+- Updated the version of `Download\Lora\Anima_Official\botan_anima.bat` (Renamed from `botan_animaPre.bat`)
+
 ### 2026/5/27
 
 - Updated the version of `Download\Lora\Anima_Official\AnimaTurbo.bat`
