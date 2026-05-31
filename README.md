@@ -16,14 +16,7 @@ Dedicated to **Mr. Zuntan**（[@Zuntan03](https://github.com/Zuntan03)）
 
 </div>
 
-***
-
-> [!IMPORTANT]
-> - From approximately on May 23, 2026, 3:34 AM GMT to approximately on May 23, 2026, 1:56 PM GMT: Due to a Git operation error, the `Images` and `Model`’ folders in the repository were missing. It appears that anyone who attempted a new installation during this time likely encountered an error as a result.
-> - I apologize for the inconvenience.
-> - Users who have already installed and updated it using `Update.bat` or `git pull` should not be experiencing any issues since these folders were specified in `.gitignore`.
-
-***
+---
 
 `EasyForgeNeo` is a 1-click installer to deploy [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) (Forge Neo) on Windows environments equipped with Nvidia GPUs.
 
@@ -92,7 +85,6 @@ The batch files for launching, updating, downloading models, as well as the fold
 <div style="padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 If there are extensions you need that are not pre-installed in EasyForgeNeo, please find and install them manually, or use EasyReforge-Next.
-> [!TIP]
 > - The "N/A" sections don't necessarily mean that there are no extensions compatible with Forge Neo. In some cases, there are multiple candidates, making it impossible to decide which one should be pre-installed in this package.
 > - If you're installing them yourself, [Forge Neo Discussion #1128](https://github.com/Haoming02/sd-webui-forge-classic/discussions/1128) might be a helpful reference.
 
@@ -144,8 +136,6 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 ## 🛠️ Installation
 
 First, right-click and save [EasyForgeNeoInstaller.bat](https://github.com/hirorohi03/EasyForgeNeo/raw/main/EasyForgeNeo/EasyForgeNeoInstaller.bat) to your PC.
-> [!IMPORTANT]
-> - May 23, 2026, 3:34 AM GMT: The link was incorrect, so It has been corrected.
 
 Then, proceed with either **Pattern A** or **Pattern B**.
 
@@ -169,7 +159,6 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 <details>
 <summary><b>TIPS (Click to expand)</b></summary>
 
-> [!TIP]
 > - Once you have verified that everything works properly, you can safely delete `EasyReforge.bak` and `EasyTools.bak`.
 > - Generated images are stored in the `Images` folder. The existing `OutputReforge` folder remains as a junction link pointing to the same folder; you can delete it if it is no longer needed.
 > - The `Sample` folder will not be updated from the existing [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge).
@@ -188,7 +177,6 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 <details>
 <summary><b>TIPS (Click to expand)</b></summary>
 
-> [!TIP]
 > - If a GeForce RTX 30 series GPU (Ampere architecture, Compute Capability 8.6) or higher is detected, Forge Neo will be automatically configured with `--sage --flash --nunchaku` enabled.
 > - Detection may not work correctly in multi-GPU environments (we will consider addressing this if detailed feedback/information is provided).
 
@@ -204,7 +192,6 @@ You can launch Forge Neo by running any of the following batch files in the inst
 <details>
 <summary><b>TIPS (Click to expand)</b></summary>
 
-> [!TIP]
 > - If you are using a GeForce RTX 30 series or higher GPU and wish to launch Forge Neo with `sageattention` and `flashattention` disabled, add `--disable-sage` or `--disable-flash` to your custom launch arguments.
 
 </div>
@@ -219,7 +206,6 @@ If you want to customize your launch arguments freely, copy either `ForgeNeo_Fas
 <details>
 <summary><b>TIPS (Click to expand)</b></summary>
 
-> [!TIP]
 > - Forge Neo and reForge can be run simultaneously. Forge Neo launches on port `7860`, and reForge launches on port `7870` (Please be mindful of your VRAM and system memory usage).
 
 </div>
