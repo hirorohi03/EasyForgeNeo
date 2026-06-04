@@ -215,7 +215,7 @@ If you want to customize your launch arguments freely, copy either `ForgeNeo_Fas
 
 For basic usage of this package, please refer to [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge/).
 
-Additional guides and tips will be published on [my note.com articles](https://note.com/hirorohi03) from time to time.
+Additional guides and tips will be published on [my note.com articles](https://note.com/hirorohi03/n/n26a9ca1ef166) from time to time.
 
 ## 🔁 How to Update
 
@@ -255,6 +255,11 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/6/5
+
+- Updated the version of `Download\Lora\Anima_Official\HakushiMixAnima.bat`
+- Updated the version of `Download\Lora\Anima_Official\WAI-ANIMA.bat`
+
 ### 2026/5/31
 
 - Updated the version of `Download\Lora\Anima_Official\botan_anima.bat` (Renamed from `botan_animaPre.bat`)
@@ -274,6 +279,10 @@ The process is identical for pinning/unpinning the reForge core version:
     - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
     - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.
 
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/5/22
 
 - Added `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
@@ -292,10 +301,6 @@ The process is identical for pinning/unpinning the reForge core version:
 - Updated the download batch for Anima custom models.
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
-
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/05/19
 
@@ -327,7 +332,7 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📞 Support & Inquiries
 
-If you have any questions, encounter bugs, or have feature requests regarding this project, please let me know via [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues). For those unfamiliar with GitHub, comments on my [X](https://x.com/hirorohi003) or related articles on [note](https://note.com/hirorohi03) are also welcome.
+If you have any questions, encounter bugs, or have feature requests regarding this project, please let me know via [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues). For those unfamiliar with GitHub, comments on my [X](https://x.com/hirorohi003) or related articles on [note](https://note.com/hirorohi03/n/n26a9ca1ef166) are also welcome.
 - For issues regarding the core systems of Forge Neo, reForge, extensions, other external software components, or models themselves, please contact their respective upstream developers.
     - While I might answer things I am familiar with, such inquiries will generally be ignored or closed.
     - Conversely, please do not contact other developers regarding problems unique to this installer package.
