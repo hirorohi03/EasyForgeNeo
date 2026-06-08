@@ -254,6 +254,11 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/6/8
+
+- `Download\Lora\Anima_Official\AnimaIka.bat` のバージョンを更新しました。
+- `Download\Lora\Anima_Official\botan_anima.bat` のバージョンを更新しました。
+
 ### 2026/6/5
 
 - `Download\Lora\Anima_Official\HakushiMixAnima.bat` のバージョンを更新しました。

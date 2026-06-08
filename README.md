@@ -255,6 +255,11 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/6/8
+
+- Updated the version of `Download\Lora\Anima_Official\AnimaIka.bat`
+- Updated the version of `Download\Lora\Anima_Official\botan_anima.bat`
+
 ### 2026/6/5
 
 - Updated the version of `Download\Lora\Anima_Official\HakushiMixAnima.bat`
