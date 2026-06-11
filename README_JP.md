@@ -254,6 +254,11 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/6/12
+
+- `Download\Lora\Anima_Official\copycat-anima.bat` のバージョンを更新しました。
+- `Download\Lora\Anima_Official\hassakuAnima.bat` のバージョンを更新しました。
+
 ### 2026/6/8
 
 - `Download\Lora\Anima_Official\AnimaIka.bat` のバージョンを更新しました。
@@ -276,16 +281,16 @@ reForge本体のバージョン指定／解除も同様です。
 
 - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
 
+<details>
+<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/5/23
 
 - 拡張機能の [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)  を [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) に変更しました。
     - 既にインストール済みの場合、 Civitai Browser Neo は自動で削除されません。不要な場合はエクスプローラーで `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` フォルダを削除してください。
     - Civitai Browser と Civitai Helper は併用可能ですが、メタデータのファイル名 (`Model\*\モデル名.json`) が同一かつ別形式のため一方でメタデータ表示が欠落することがあります。
     - Civitai Helperで `Scan` してメタデータを作成する前に、Civitai Brouserが作成した `Model\*\*.json` をエクスプローラーで削除してください。
-
-<details>
-<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/5/22
 

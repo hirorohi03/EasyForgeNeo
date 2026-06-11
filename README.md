@@ -252,8 +252,12 @@ The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Enable.bat`
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
-
 ## 📖 Changelog
+
+### 2026/6/12
+
+- Updated the version of `Download\Lora\Anima_Official\copycat-anima.bat`
+- Updated the version of `Download\Lora\Anima_Official\hassakuAnima.bat`
 
 ### 2026/6/8
 
@@ -277,16 +281,16 @@ The process is identical for pinning/unpinning the reForge core version:
 
 - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
 
-### 2026/5/23
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
+ ### 2026/5/23
 
 - I have changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
     - If it is already installed, Civitai Browser Neo will not be automatically removed. If you no longer need it, please delete the `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` folder using File Explorer.
     - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
     - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.
-
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/5/22
 
