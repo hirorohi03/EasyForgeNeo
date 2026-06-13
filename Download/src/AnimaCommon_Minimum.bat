@@ -17,6 +17,17 @@ call %~dp0..\adetailer\segm\PitHandDetailer-v1b-seg.bat
 
 call %~dp0..\All\ESRGAN.bat
 
+call %~dp0..\ControlNet\Anima\anima-lllite-any-test-like-1-step1000.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-any-test-like-1-step2000.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-any-test-like-v2-beta-epoch-03.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-any-test-like-v2.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-depth-1.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-inpainting-v1.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-inpainting-v2.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-lineart-1.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-pose-1.bat
+call %~dp0..\ControlNet\Anima\anima-lllite-scribble-1.bat
+
 call %~dp0..\Lora\Anima_Official\AnimaHighres.bat
 call %~dp0..\Lora\Anima_Official\AnimaRL.bat
 call %~dp0..\Lora\Anima_Official\AnimaTurbo.bat
