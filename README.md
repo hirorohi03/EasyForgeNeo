@@ -254,6 +254,11 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/6/13
+
+- Added `Download\ControlNet\Anima`
+- Added `Download\ControlNet\Anima` to `Download\src\AnimaCommon_Minimum.bat`
+
 ### 2026/6/12
 
 - Updated the version of `Download\Lora\Anima_Official\copycat-anima.bat`

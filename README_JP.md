@@ -254,6 +254,11 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/6/13
+
+- `Download\ControlNet\Anima` を追加しました。
+- `Download\src\AnimaCommon_Minimum.bat` に `Download\ControlNet\Anima` を追加しました。
+
 ### 2026/6/12
 
 - `Download\Lora\Anima_Official\copycat-anima.bat` のバージョンを更新しました。
