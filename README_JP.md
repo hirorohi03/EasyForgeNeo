@@ -254,6 +254,12 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/6/20
+
+- `Download\ControlNet\Anima\anima-lllite-regional.bat` を追加しました。
+- `Download\ControlNet\Anima\animaTileRepair.bat` を追加しました。
+- `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+
 ### 2026/6/13
 
 - `Download\ControlNet\Anima` を追加しました。
@@ -274,6 +280,10 @@ reForge本体のバージョン指定／解除も同様です。
 - `Download\Lora\Anima_Official\HakushiMixAnima.bat` のバージョンを更新しました。
 - `Download\Lora\Anima_Official\WAI-ANIMA.bat` のバージョンを更新しました。
 
+<details>
+<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/5/31
 
 - `Download\Lora\Anima_Official\botan_anima.bat` のバージョンを更新しました。（`botan_animaPre.bat` からリネーム）
@@ -285,10 +295,6 @@ reForge本体のバージョン指定／解除も同様です。
 ### 2026/5/24
 
 - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
-
-<details>
-<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/5/23
 

@@ -254,6 +254,12 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/6/20
+
+- Added `Download\ControlNet\Anima\anima-lllite-regional.bat`
+- Added `Download\ControlNet\Anima\animaTileRepair.bat`
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+
 ### 2026/6/13
 
 - Added `Download\ControlNet\Anima`
@@ -274,6 +280,10 @@ The process is identical for pinning/unpinning the reForge core version:
 - Updated the version of `Download\Lora\Anima_Official\HakushiMixAnima.bat`
 - Updated the version of `Download\Lora\Anima_Official\WAI-ANIMA.bat`
 
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/5/31
 
 - Updated the version of `Download\Lora\Anima_Official\botan_anima.bat` (Renamed from `botan_animaPre.bat`)
@@ -285,10 +295,6 @@ The process is identical for pinning/unpinning the reForge core version:
 ### 2026/5/24
 
 - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
-
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
  ### 2026/5/23
 
