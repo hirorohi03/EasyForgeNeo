@@ -254,6 +254,15 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/7/1
+
+- `Download\DiffusionModels\Anima_Custom\botan_anima.bat` のバージョンを更新しました。
+- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+- `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+- `Download\ControlNet\Anima\animaTileRepair.bat` のバージョンを更新しました。
+- `Download\src\AnimaCommon_Minimum.bat` を修正しました。
+- Ollama のバージョンを v0.24.0 から v0.31.1 に更新しました。 (EasyTools)
+
 ### 2026/6/20
 
 - `Download\ControlNet\Anima\anima-lllite-regional.bat` を追加しました。

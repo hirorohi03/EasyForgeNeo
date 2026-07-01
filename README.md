@@ -254,6 +254,15 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/7/1
+
+- Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+- Updated the version of `Download\ControlNet\Anima\animaTileRepair.bat`
+- Fix `Download\src\AnimaCommon_Minimum.bat`
+- Update Ollama version from v0.24.0 to v0.31.1 (EasyTools)
+
 ### 2026/6/20
 
 - Added `Download\ControlNet\Anima\anima-lllite-regional.bat`
