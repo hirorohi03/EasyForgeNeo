@@ -56,6 +56,10 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% Replactionap Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+echo xcopy /SQY %~dp0src\Stable-diffusion-webui-civitai-helper-RED-UPDATE\supported_models.py Stable-diffusion-webui-civitai-helper-RED-UPDATE\browser\
+xcopy /SQY %~dp0src\Stable-diffusion-webui-civitai-helper-RED-UPDATE\supported_models.py Stable-diffusion-webui-civitai-helper-RED-UPDATE\browser\
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 @REM https://github.com/SiliconeShojo/ScribeNEO
 call %GITHUB_CLONE_OR_PULL% SiliconeShojo ScribeNEO
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
