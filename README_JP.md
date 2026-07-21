@@ -254,6 +254,19 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/7/21
+
+- `EasyForgeNeoInstaller.bat` または `Update.bat` 実行時、Civitai Helper Browser の BaseModel 定義ファイル (`supported_models.py`) を置換する処理を追加しました。
+- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎` のバージョンを更新しました。
+- `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` のバージョンを更新しました。
+- `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0.bat` を追加しました。
+- `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0b.bat` を追加しました。
+- `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.1.bat` を追加しました。
+- `Download/DiffusionModels/Anima_Official/anima-turbo-v1.0.bat` を追加しました。
+- `Download/DiffusionModels/Anima_Official/anima-preview.bat` を削除しました。
+- `Download/DiffusionModels/Anima_Official/anima-preview2.bat` を削除しました。
+- `Download\src\Anima_Standard.bat` に `aesthetic-v1.1` と `turbo-v1.0` を追加しました。
+
 ### 2026/7/1
 
 - `Download\DiffusionModels\Anima_Custom\botan_anima.bat` のバージョンを更新しました。
@@ -268,6 +281,10 @@ reForge本体のバージョン指定／解除も同様です。
 - `Download\ControlNet\Anima\anima-lllite-regional.bat` を追加しました。
 - `Download\ControlNet\Anima\animaTileRepair.bat` を追加しました。
 - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+
+<details>
+<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/6/13
 
@@ -288,10 +305,6 @@ reForge本体のバージョン指定／解除も同様です。
 
 - `Download\Lora\Anima_Official\HakushiMixAnima.bat` のバージョンを更新しました。
 - `Download\Lora\Anima_Official\WAI-ANIMA.bat` のバージョンを更新しました。
-
-<details>
-<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/5/31
 

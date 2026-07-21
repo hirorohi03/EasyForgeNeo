@@ -254,6 +254,19 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/7/21
+
+- Added a process to replace the BaseModel definition file (`supported_models.py`) of Civitai Helper Browser when `EasyForgeNeoInstaller.bat` or `Update.bat` are run.
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎`
+- Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
+- Added `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0.bat`
+- Added `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0b.bat`
+- Added `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.1.bat`
+- Added `Download/DiffusionModels/Anima_Official/anima-turbo-v1.0.bat`
+- Deleted `Download/DiffusionModels/Anima_Official/anima-preview.bat`
+- Deleted `Download/DiffusionModels/Anima_Official/anima-preview2.bat`
+- Added `aesthetic-v1.1` and `turbo-v1.0` to `Download\src\Anima_Standard.bat`
+
 ### 2026/7/1
 
 - Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
@@ -268,6 +281,10 @@ The process is identical for pinning/unpinning the reForge core version:
 - Added `Download\ControlNet\Anima\anima-lllite-regional.bat`
 - Added `Download\ControlNet\Anima\animaTileRepair.bat`
 - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/6/13
 
@@ -288,10 +305,6 @@ The process is identical for pinning/unpinning the reForge core version:
 
 - Updated the version of `Download\Lora\Anima_Official\HakushiMixAnima.bat`
 - Updated the version of `Download\Lora\Anima_Official\WAI-ANIMA.bat`
-
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/5/31
 
