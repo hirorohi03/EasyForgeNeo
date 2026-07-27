@@ -11,6 +11,7 @@ class ForgeNeoConfig:
         self.updaters = {
             "0.0.0": self.update_0_0_0,
             "0.1.0": self.update_0_1_0,
+            "0.1.1": self.update_0_1_1,
         }
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
@@ -100,6 +101,14 @@ class ForgeNeoConfig:
         if os.path.exists(api_file):
             with open(api_file, "r", encoding="utf-8") as f:
                 cfg["ch_civiai_api_key"] = f.readline().rstrip("\r\n") # API key for authenticating with Civitai (Helper)
+
+        self.backup_styles_csv()
+
+    def update_0_1_1(self, cfg):
+        cfg["easy_forge_neo_config_version"] = "0.1.2"
+
+        if "anima_do_reference" not in cfg["extra_options_img2img"]:
+            cfg["extra_options_img2img"].append("anima_do_reference") # Settings for img2img (setting entries that also appear in img2img interfaces)
 
         self.backup_styles_csv()
 
