@@ -254,17 +254,25 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/7/27
+
+- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎` のバージョンを更新しました。
+- `Download\Lora\Anima_Boost\AnimaDMD2.bat` のダウンロードフォルダを修正しました。
+- `Settings` の `Settings for img2img` に `anima_do_reference` を追加しました。
+- `Download\Lora\Anima_Edit\AnimaEdit.bat` を追加しました。
+    - 利用方法は[「Forge NeoでのAnima-Edit (Cosmos Reference + Edit LoRA) の使い方」](https://note.com/hirorohi03/n/na72233a8d6a4)をご覧ください。
+
 ### 2026/7/21
 
 - `EasyForgeNeoInstaller.bat` または `Update.bat` 実行時、Civitai Helper Browser の BaseModel 定義ファイル (`supported_models.py`) を置換する処理を追加しました。
 - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎` のバージョンを更新しました。
 - `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` のバージョンを更新しました。
-- `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0.bat` を追加しました。
-- `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0b.bat` を追加しました。
-- `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.1.bat` を追加しました。
-- `Download/DiffusionModels/Anima_Official/anima-turbo-v1.0.bat` を追加しました。
-- `Download/DiffusionModels/Anima_Official/anima-preview.bat` を削除しました。
-- `Download/DiffusionModels/Anima_Official/anima-preview2.bat` を削除しました。
+- `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0.bat` を追加しました。
+- `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0b.bat` を追加しました。
+- `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.1.bat` を追加しました。
+- `Download\DiffusionModels\Anima_Official\anima-turbo-v1.0.bat` を追加しました。
+- `Download\DiffusionModels\Anima_Official\anima-preview.bat` を削除しました。
+- `Download\DiffusionModels\Anima_Official\anima-preview2.bat` を削除しました。
 - `Download\src\Anima_Standard.bat` に `aesthetic-v1.1` と `turbo-v1.0` を追加しました。
 
 ### 2026/7/1

@@ -254,17 +254,25 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/7/27
+
+- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎`
+- Fix the download folder of `Download\Lora\Anima_Boost\AnimaDMD2.bat`
+- Added `anima_do_reference` to `Settings for img2img` in `Settings`
+- Added `Download\Lora\Anima_Edit\AnimaEdit.bat`
+    - For instructions on how to use this LoRA, please see [“How to Use Anima-Edit (Cosmos Reference + Edit LoRA) on Forge Neo”](https://note.com/hirorohi03/n/na72233a8d6a4).
+
 ### 2026/7/21
 
 - Added a process to replace the BaseModel definition file (`supported_models.py`) of Civitai Helper Browser when `EasyForgeNeoInstaller.bat` or `Update.bat` are run.
 - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎`
 - Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
-- Added `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0.bat`
-- Added `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.0b.bat`
-- Added `Download/DiffusionModels/Anima_Official/anima-aesthetic-v1.1.bat`
-- Added `Download/DiffusionModels/Anima_Official/anima-turbo-v1.0.bat`
-- Deleted `Download/DiffusionModels/Anima_Official/anima-preview.bat`
-- Deleted `Download/DiffusionModels/Anima_Official/anima-preview2.bat`
+- Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0.bat`
+- Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0b.bat`
+- Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.1.bat`
+- Added `Download\DiffusionModels\Anima_Official\anima-turbo-v1.0.bat`
+- Deleted `Download\DiffusionModels\Anima_Official\anima-preview.bat`
+- Deleted `Download\DiffusionModels\Anima_Official\anima-preview2.bat`
 - Added `aesthetic-v1.1` and `turbo-v1.0` to `Download\src\Anima_Standard.bat`
 
 ### 2026/7/1
