@@ -12,7 +12,7 @@
 
 A 1-click installer for an Anima image generation environment centered around [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo), designed for **Windows** 🔹 Nvidia GPU.
 
-Dedicated to **Mr. Zuntan**（[@Zuntan03](https://github.com/Zuntan03)）
+Dedicated to **Mr. Zuntan** ([@Zuntan03](https://github.com/Zuntan03))
 
 </div>
 
@@ -22,7 +22,7 @@ Dedicated to **Mr. Zuntan**（[@Zuntan03](https://github.com/Zuntan03)）
 
 No manual setup of Git or Python is required.
 
-It is best understood as the **Forge Neo version** of [EasyReforge](https://github.com/Zuntan03/EasyReforge)—a 1-click installer for [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (reForge) developed by Mr. Zuntan（[@Zuntan03](https://github.com/Zuntan03)）—and its fork, my project [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge).
+It is best understood as the **Forge Neo version** of [EasyReforge](https://github.com/Zuntan03/EasyReforge)—a 1-click installer for [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (reForge) developed by Mr. Zuntan ([@Zuntan03](https://github.com/Zuntan03)) —and its fork, my project [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge).
 
 This tool is specifically optimized for image generation using **Anima** ([circlestone-labs/Anima](https://huggingface.co/circlestone-labs/Anima)). It comes pre-packaged with a dedicated downloader for Anima-related models, recommended extensions, optimal initial configurations, and a convenient `styles.csv` file.
 
@@ -71,9 +71,9 @@ Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://g
 | [Python](https://www.python.org/downloads/release/python-31312/) | 3.13.12 | venv version (v3.10.11 used for reForge) |
 | [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) & Extensions | Latest | Can be updated by the user |
 | [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) & Extensions | Latest | Can be updated by the user |
-| Anima Models & Download Batch | － | Downloader for official and derivative Anima models |
-| Custom `styles.csv` | － | Style preset collection to support generation in Anima |
-| Recommended Settings for Forge Neo | － | Optimized initial settings tailored for Anima generation |
+| Anima Models & Download Batch | N/A | Downloader for official and derivative Anima models |
+| Custom `styles.csv` | N/A | Style preset collection to support generation in Anima |
+| Recommended Settings for Forge Neo | N/A | Optimized initial settings tailored for Anima generation |
 
 ## 🔍 Comparison with EasyReforge-Next
 
@@ -88,7 +88,7 @@ The batch files for launching, updating, downloading models, as well as the fold
 | Feature / Element | EasyReforge-Next | EasyForgeNeo (This Project) |
 | :--- | :--- | :--- |
 | **Main WebUI** | [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) | [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) |
-| **Sub WebUI** | － | [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) |
+| **Sub WebUI** | N/A | [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) |
 | **Supported Models** | SD / SDXL only | **SD / SDXL, Anima, and other models supported by Forge Neo** |
 | **Characteristics** | Traditional and stable reForge environment | **Latest Forge Neo base + Anima-specific initial settings & extensions** |
 
@@ -117,15 +117,15 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [Easy Generate Forever](https://github.com/blue-pen5805/sdweb-easy-generate-forever) | [Repeat Generate for NEO](https://github.com/hirorohi03/repeat-generate-4NEO) | Repeat image generation automatically |
 | [CD(Color/Detail) Tuner](https://github.com/hako-mikan/sd-webui-cd-tuner) | N/A | Color/Detail control |
 | [Cutoff - Cutting Off Prompt Effect](https://github.com/hnmr293/sd-webui-cutoff) | N/A | Limits the tokens' influence scope |
-| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | N/A | Background coloring to ”Enable" buttons |
+| [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | N/A | Background coloring to "Enable" buttons |
 | [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | Same as left | Reduce image generation time |
 | [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | N/A | LoRA strength can be set block by block |
 | [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip) | Negative effects within regular prompts |
 | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Same as left | Improve the display of image information |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | Improve the prompt/negative prompt input box |
-| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | － | Visually adjuster the weights of LoRA |
+| [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | Visually adjuster the weights of LoRA |
 | [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | ~[CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)~<BR> [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | Browse, download, and manage your CivitAI models |
-| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | － | Localize UI into Japanese |
+| [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | Localize UI into Japanese |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
 
@@ -165,7 +165,7 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 
 > [!IMPORTANT]
 > - Make sure to back up your entire [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) folder beforehand.
-> - If your `Model` folder is too large and you want to save time/space, you can temporarily move the models outside the `EasyReforge-Next` directory during installation. Since `OutputReforge` is a junction link, moving the link itself does nothing—make sure to move the actual contents (like `txt2img-images`) instead.
+> - If your `Model` folder is too large and you want to save time/space, you can temporarily move the models outside the `EasyReforge-Next` directory during installation. Since `OutputReforge` is a junction link, moving the link itself does nothing-make sure to move the actual contents (like `txt2img-images`) instead.
 > - After setup, the environment will run as an integrated EasyReforge-Next equivalent within EasyForgeNeo, rather than standalone. The core reForge system remains unchanged, but the package folder structure and batch files will be restructured.
 
 1. Place `EasyForgeNeoInstaller.bat` into the exact same directory where [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) is located (the parent directory containing `Download` and `OutputReforge`). Double-click to run it.
@@ -271,12 +271,17 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/7/31
+
+- Changes
+    - Messages and comments have been translated into English, or are now displayed in both English and Japanese.
+
 ### 2026/7/27
 
 - New
     - Added `anima_do_reference` to `Settings for img2img` in `Settings`
     - Added `Download\Lora\Anima_Edit\AnimaEdit.bat`
-        - For instructions on how to use this LoRA, please see [“How to Use Anima-Edit (Cosmos Reference + Edit LoRA) on Forge Neo”](https://note.com/hirorohi03/n/na72233a8d6a4).
+        - For instructions on how to use this LoRA, please see ["How to Use Anima-Edit (Cosmos Reference + Edit LoRA) on Forge Neo"](https://note.com/hirorohi03/n/na72233a8d6a4)
 - Fix
     - Fix the download folder of `Download\Lora\Anima_Boost\AnimaDMD2.bat`
 - Update of Download batch
@@ -385,7 +390,7 @@ The process is identical for pinning/unpinning the reForge core version:
         - If Ollama is already installed on the system, models will be saved to its designated location. (Default is `C:\Users\Username\.ollama\models`)
         - If Ollama was installed via EasyForgeNeo, models will be saved in `Model\Ollama`.
 > [!IMPORTANT]
-> - When you run an Ollama-related batch file for the first time, a Windows Firewall permission prompt for `ollama.exe` will appear. This is an “Inbound Rule” that allows `ollama.exe` to download models. If you did not grant permission in this prompt but later decide to allow it, please go to the Windows Defender Firewall settings and allow communication for `ollama.exe`.
+> - When you run an Ollama-related batch file for the first time, a Windows Firewall permission prompt for `ollama.exe` will appear. This is an "Inbound Rule" that allows `ollama.exe` to download models. If you did not grant permission in this prompt but later decide to allow it, please go to the Windows Defender Firewall settings and allow communication for `ollama.exe`.
 - Update of Download batch
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
@@ -405,7 +410,7 @@ The process is identical for pinning/unpinning the reForge core version:
 
 - ~Ollama integration batch file for ScribeNEO~
 - ~Download batch file for LLM models~
-- Translating messages into English
+- ~Translating messages into English~
 - Specifying/unpinning Forge Neo versions using Git tags
 - `uv` package manager support
 
@@ -420,7 +425,7 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📞 Support & Inquiries
 
-If you have any questions, encounter any bugs, or have any requests regarding this product, please contact me via [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues) whenever possible. For general questions or requests, you’re also welcome to use [X](https://x.com/hirorohi003) or the [note Q&A](https://note.com/qa/hirorohi03).
+If you have any questions, encounter any bugs, or have any requests regarding this product, please contact me via [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues) whenever possible. For general questions or requests, you're also welcome to use [X](https://x.com/hirorohi003) or the [note Q&A](https://note.com/qa/hirorohi03).
 - For issues regarding the core systems of Forge Neo, reForge, extensions, other external software components, or models themselves, please contact their respective upstream developers.
     - While I might answer things I am familiar with, such inquiries will generally be ignored or closed.
     - Conversely, please do not contact other developers regarding problems unique to this installer package.
@@ -434,7 +439,7 @@ If you have any questions, encounter any bugs, or have any requests regarding th
 - **Sub WebUI**: [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (and respective extension projects)
 - **Main Model**: [Anima by circlestone-labs](https://huggingface.co/circlestone-labs/Anima)
 - **Acknowledgements & Code References**:
-    - This project utilizes and references a substantial amount of code from [EasyReforge](https://github.com/Zuntan03/EasyReforge) and [EasyTools](https://github.com/Zuntan03/EasyTools) developed by **Mr. Zuntan**（[@Zuntan03](https://github.com/Zuntan03)）. I would like to express my deepest gratitude to him for sharing his wonderful work with the community.
+    - This project utilizes and references a substantial amount of code from [EasyReforge](https://github.com/Zuntan03/EasyReforge) and [EasyTools](https://github.com/Zuntan03/EasyTools) developed by **Mr. Zuntan** ([@Zuntan03](https://github.com/Zuntan03)). I would like to express my deepest gratitude to him for sharing his wonderful work with the community.
 - **Developer**: [hirorohi03](https://github.com/hirorohi03)
 
 ## ⚖️ Disclaimer & License
