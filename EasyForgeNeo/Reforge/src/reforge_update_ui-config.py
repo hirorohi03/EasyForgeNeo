@@ -22,7 +22,7 @@ class ReforgeUiConfig:
         }
 
         if not os.path.exists(cfg_path):
-            with open(cfg_path, "w", encoding="utf-8") as f:  # BOM 不可
+            with open(cfg_path, "w", encoding="utf-8") as f:  # Non-BOM
                 json.dump(
                     {},
                     f,
@@ -30,7 +30,7 @@ class ReforgeUiConfig:
 
         with open(cfg_path, "r+", encoding="utf-8") as f:
             cfg = json.load(f)
-            if "easy_reforge_ui-config_version" not in cfg:  # ファイル生成なし対策
+            if "easy_reforge_ui-config_version" not in cfg:
                 cfg["easy_reforge_ui-config_version"] = "0.0.0"
 
             if self.DEBUG_MODE:
@@ -101,7 +101,7 @@ class ReforgeUiConfig:
         # cfg["customscript/dynamic_prompting.py/txt2img/Fixed seed/value"] = False
 
         cfg["txt2img/Prompt/value"] = (
-            "1girl, rem \\(re:zero\\), re:zero kara hajimeru isekai seikatsu,\nofficial style,\nsanta costume, indoors,\n<lora:NoobV065sHyperDmd:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe\n# 起動時の設定を変更したい場合は、設定を変更して Settings - Defaults の Apply"
+            "1girl, rem \\(re:zero\\), re:zero kara hajimeru isekai seikatsu,\nofficial style,\nsanta costume, indoors,\n<lora:NoobV065sHyperDmd:1> masterpiece, best quality, very aesthetic, absurdres, newest, safe\n# If you want to change the startup settings, after making the changes, Settings > Defaults > Apply"
         )
 
         cfg["txt2img/Negative prompt/value"] = "bad anatomy, worst quality, low quality"
@@ -127,7 +127,7 @@ class ReforgeUiConfig:
     def update_0_1_3(self, cfg):
         cfg["easy_reforge_ui-config_version"] = "0.1.4"
 
-        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True  # GPU ではシードの再現性がなくなる
+        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True  # GPU lacks reproducibility based on the seed
 
     def update_0_1_4(self, cfg):
         cfg["easy_reforge_ui-config_version"] = "0.1.5"

@@ -26,5 +26,5 @@ if exist %~dp0ForgeNeo\Update_DisableMinimumDownload.txt ( exit /b 0 )
 
 if exist %~dp0..\Models\DiffusionModels\ (
 	call %~dp0..\Download\src\AnimaCommon_Minimum.bat
-	@REM リンク切れ対策としてダウンロードの結果は確認しない
+	@REM Do not check the download results, as the link may be deleted
 )

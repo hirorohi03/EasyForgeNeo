@@ -1,6 +1,5 @@
 @echo off
 chcp 65001 > NUL
-@REM Minimum は Civitai ログイン不要を維持する必要はない
 
 call %~dp0..\adetailer\bbox\face_yolov9c.bat
 call %~dp0..\adetailer\bbox\foot_yolov8x_v2.bat

@@ -8,7 +8,7 @@ set PROJECT_MODEL_DOWNLOAD_BAT=%~dp0Download\Anima_Minimum.bat
 set PROJECT_MODEL_DOWNLOAD_BAT2=%~dp0Download\Illustrious_Minimum.bat
 
 set PROJECT_URL=https://github.com/hirorohi03/%PROJECT_NAME%
-set PROJECT_BRANCH=main
+set PROJECT_BRANCH=english
 set "PROJECT_DIR=%~dp0."
 set "EASY_TOOLS_DIR=%~dp0EasyTools"
 
@@ -19,36 +19,40 @@ set EASY_TOOLS_BRANCH=main
 set EASY_REFORGE_URL=https://github.com/hirorohi03/EasyReforge
 
 if not exist "C:\Windows\System32\where.exe" (
-	echo "[ERROR] C:\Windows\System32\where.exe が見つかりません。"
+	echo "[ERROR] C:\Windows\System32\where.exe cannot be found."
 	pause & exit /b 1
 )
 
 set PS_EXE=PowerShell
 where /Q %PS_EXE%
 if %ERRORLEVEL% neq 0 (
-	echo "[ERROR] %PS_EXE% が見つかりません。"
+	echo "[ERROR] %PS_EXE% cannot be found."
 	pause & exit /b 1
 )
 
-@REM Windows 11 でプリインストールされているバージョンが 5.1
+@REM The version of PowerShell preinstalled on Windows 11 is 5.1
 set PS_CMD=PowerShell -Version 5.1 -NoProfile -ExecutionPolicy Bypass
 
 %PS_CMD% -c "if ('%~dp0' -match '^[a-zA-Z0-9:_\\/-]+$') {exit 0}; exit 1"
 if %ERRORLEVEL% neq 0 (
 	echo "[ERROR] 現在のフォルダパス %~dp0 に英数字・ハイフン・アンダーバー以外が含まれています。"
-	echo "英数字・ハイフン・アンダーバーのフォルダパスに bat ファイルを移動して、再実行してください。"
+	echo "英数字・ハイフン・アンダーバーのみを含むフォルダパスに bat ファイルを移動して、再実行してください。"
+    echo.
+	echo "[ERROR] The current folder path %~dp0 contains characters other than alphanumeric characters, hyphens, and underscores."
+	echo "Move the BAT file to a folder path that contains only alphanumeric characters, hyphens, and underscores, and then run it again."
 	pause & exit /b 1
 )
 
 set CURL_EXE=C:\Windows\System32\curl.exe
 if not exist %CURL_EXE% (
-	echo "[ERROR] %CURL_EXE% が見つかりません。"
+	echo "[ERROR] %CURL_EXE% cannot be found."
 	pause & exit /b 1
 )
 set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
 if exist %~dp0sd-webui-forge-neo\ (
 	echo "%~dp0sd-webui-forge-neo が既に存在します。別のフォルダにインストールしてください。"
+	echo "%~dp0sd-webui-forge-neo already exists. Please install it in a different folder."
 	pause & exit /b 1
 )
 
@@ -61,13 +65,13 @@ if "!DOWNLOAD_MODEL_YES_OR_NO!" == "n" (
     pause & exit /b 1
 )
 
-@REM ---- ここから Git/Git_SetPath.bat と同期 ----
+@REM ---- Synchronize with Git/Git_SetPath.bat Start ----
 where /Q git
 if %ERRORLEVEL% equ 0 ( goto :EASY_GIT_FOUND )
 cd > NUL
 
 set PORTABLE_GIT_BIN=%EASY_GIT_DIR%\env\PortableGit\bin
-@REM パッチバージョンは4個目が追加される (2.53.0, 2.53.0.2, 2.53.0.3, ...)
+@REM A fourth digit will be added to the patch version (2.53.0, 2.53.0.2, 2.53.0.3, ...)
 set PORTABLE_GIT_VERSION=2.53.0.3
 set PORTABLE_GIT_BASE=2.53.0
 set PORTABLE_GIT_PATCH=3
@@ -83,7 +87,8 @@ if not exist %PORTABLE_GIT_BIN%\ (
 
 	start "" %PS_CMD% -Command "Start-Sleep -Seconds 5; $title='Portable Git for Windows 64-bit'; $window=Get-Process | Where-Object { $_.MainWindowTitle -eq $title } | Select-Object -First 1; if ($window -ne $null) { [void][System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic'); [Microsoft.VisualBasic.Interaction]::AppActivate($window.Id); Start-Sleep -Seconds 1; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('{ENTER}') }"
 
-	echo "操作せずに、そのまま Portable Git for Windows をインストールしてください。"
+	echo "設定を変更せずに、そのまま Portable Git for Windows をインストールしてください。"
+	echo "Please install Portable Git for Windows as is, without changing any settings."
 	%EASY_GIT_DIR%\env\PortableGit.7z.exe
 	if !ERRORLEVEL! neq 0 ( pause & endlocal & exit /b 1 )
 
@@ -98,10 +103,11 @@ set "PATH=%PORTABLE_GIT_BIN%;%PATH%"
 where /Q git
 if %ERRORLEVEL% equ 0 ( goto :EASY_GIT_FOUND )
 echo "[Error] Git をインストールできませんでした。手動で Git for Windows をインストールしてください。"
+echo "[Error] Git could not be installed. Please install Git for Windows manually."
 pause & exit /b 1
 
 :EASY_GIT_FOUND
-@REM ---- ここまで Git/Git_SetPath.bat と同期 --------
+@REM ---- Synchronize with Git/Git_SetPath.bat End --------
 
 if exist %~dp0stable-diffusion-webui-reForge\ (
     for /f "delims=" %%i in ('git remote get-url origin 2^>nul') do (
@@ -118,7 +124,10 @@ if exist %~dp0stable-diffusion-webui-reForge\ (
         echo "実行前に必ずバックアップを取得してください。"!ESC![0m
         echo.
         echo "EasyForgeNeoと既存のEasyReforge-Nextを共存させますか？"
-        echo "共存させる場合はすべて大文字で YES と入力してください"
+        echo "共存させる場合はすべて大文字で YES と入力してください。"
+        echo.
+        echo "Would you like EasyForgeNeo and the existing EasyReforge-Next to coexist?"
+        echo "If you wish to coexist, please type YES in all capital letters."
         set /p EASY_REFORGE_OW=
 
         if /i not "!EASY_REFORGE_OW!" == "YES" (
@@ -139,6 +148,7 @@ if exist %~dp0stable-diffusion-webui-reForge\ (
         move stable-diffusion-webui-reForge\log\images Images\Saved
     ) else (
         echo "EasyReforge-Next以外の %~dp0stable-diffusion-webui-reForge が既に存在します。別のフォルダにインストールしてください。"
+        echo "%~dp0stable-diffusion-webui-reForge (not EasyReforge-Next) already exists. Please install it in a different folder."
         pause & exit /b 1
     )
 )
@@ -196,12 +206,15 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 exit /b 0
 
 :FINALIZE
-@REM HKEY_LOCAL_MACHINE の変更には管理者権限が必要
+@REM Administrator privileges are required to make changes to HKEY_LOCAL_MACHINE
 echo reg add "HKCU\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
 reg add "HKCU\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
 if %ERRORLEVEL% neq 0 (
 	echo "Windows の長いパス対応を有効にできませんでした。"
 	echo "Windows の管理者権限で EasyTools/EnableLongPaths.bat を実行してください。"
+    echo.
+	echo "Unable to enable support for long paths in Windows."
+	echo "Please run EasyTools/EnableLongPaths.bat with Windows administrator privileges."
 	pause
 )
 

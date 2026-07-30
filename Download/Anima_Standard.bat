@@ -1,6 +1,5 @@
 @echo off
 chcp 65001 > NUL
-@REM Minimum は Civitai ログイン不要を維持する必要はない
 
 call %~dp0src\AnimaCommon_Minimum.bat
 

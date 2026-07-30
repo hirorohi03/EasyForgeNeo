@@ -8,13 +8,13 @@ if not exist %~dp0stable-diffusion-webui-reForge\venv\ (
 	call %~dp0EasyForgeNeo\SetupReforge.bat
 )
 if not exist %~dp0stable-diffusion-webui-reForge\venv\ (
-	echo "[Error] %~dp0stable-diffusion-webui-reForge\venv\ が見つかりません。"
+	echo "[Error] %~dp0stable-diffusion-webui-reForge\venv\ was not found."
 	pause & exit /b 1
 )
 
 pushd %~dp0stable-diffusion-webui-reForge
 
-@REM styles.csv の更新が必要になったらstyles.csvをリネームバックアップ
+@REM If you need to update styles.csv, back up styles.csv with a different filename
 echo call %~dp0EasyForgeNeo\Reforge\ReforgeConfig.bat config.json
 call %~dp0EasyForgeNeo\Reforge\ReforgeConfig.bat config.json
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )

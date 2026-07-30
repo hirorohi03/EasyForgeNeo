@@ -1,9 +1,8 @@
 @echo off
 chcp 65001 > NUL
 
-@REM 最大 14項目 100GB 目安
+@REM The total file size must not exceed 100GB
 
-@REM 直近更新有り
 call %~dp0Stable-diffusion\NoobE\momiziNoob_v31.bat
 call %~dp0Stable-diffusion\NoobE\NtrMix_vXIII.bat
 call %~dp0Stable-diffusion\NoobE\Obsession_v31.bat
