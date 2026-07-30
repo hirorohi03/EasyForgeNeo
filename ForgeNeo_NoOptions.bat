@@ -8,13 +8,13 @@ if not exist %~dp0sd-webui-forge-neo\venv\ (
 	call %~dp0Update.bat
 )
 if not exist %~dp0sd-webui-forge-neo\venv\ (
-	echo "[Error] %~dp0sd-webui-forge-neo\venv\ が見つかりません。"
+	echo "[Error] %~dp0sd-webui-forge-neo\venv\ was not found."
 	pause & exit /b 1
 )
 
 pushd %~dp0sd-webui-forge-neo
 
-@REM styles.csv の更新が必要になったらstyles.csvをリネームバックアップ
+@REM If you need to update styles.csv, back up styles.csv with a different filename
 echo call %~dp0EasyForgeNeo\ForgeNeo\ForgeNeoConfig.bat config.json
 call %~dp0EasyForgeNeo\ForgeNeo\ForgeNeoConfig.bat config.json
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )

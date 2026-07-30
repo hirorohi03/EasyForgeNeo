@@ -16,9 +16,9 @@ class ForgeNeoConfig:
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
         if not os.path.exists(cfg_path):
-            with open(cfg_path, "w", encoding="utf-8") as f:  # BOM 不可
+            with open(cfg_path, "w", encoding="utf-8") as f:  # Non-BOM
                 json.dump(
-                    {  # InfiniteImageBrowsing が WebUI 上での初回保存前に参照するため
+                    {  # Workaround for using InfiniteImageBrowsing before "Apply settings" in the WebUI
                         "outdir_samples": "",
                         "outdir_txt2img_samples": "output\\txt2img-images",
                         "outdir_img2img_samples": "output\\img2img-images",
@@ -34,7 +34,7 @@ class ForgeNeoConfig:
 
         with open(cfg_path, "r+", encoding="utf-8") as f:
             cfg = json.load(f)
-            if "easy_forge_neo_config_version" not in cfg:  # ファイル生成なし対策
+            if "easy_forge_neo_config_version" not in cfg:
                 cfg["easy_forge_neo_config_version"] = "0.0.0"
 
             if self.DEBUG_MODE:

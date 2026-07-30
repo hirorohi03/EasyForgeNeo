@@ -7,14 +7,14 @@ set "LINK_SRC=%~dp0"
 for %%i in ("%LINK_SRC:~0,-1%") do set "LINK_NAME=%%~nxi"
 
 if "%LINK_DST%"=="" (
-	set /p LINK_DST="参照先の親フォルダをドラッグ＆ドロップしてください: "
+	set /p LINK_DST="Please drag and drop the parent folder of the target folder here: "
 	if not exist "!LINK_DST!" (
-		echo "参照先の親フォルダが見つかりません: !LINK_DST!"
+		echo "The parent folder of the target folder cannot be found: !LINK_DST!"
 		pause & endlocal & exit /b 1
 	)
 	for %%i in ("!LINK_DST!") do set "LINK_NAME=%%~nxi"
 
-	set /p LINK_NAME_INPUT="数文字の短いリンク名を入力してください（空欄なら !LINK_NAME! ）: "
+	set /p LINK_NAME_INPUT="Please enter a short link name consisting of a few characters (if left blank, it will be !LINK_NAME!): "
 	if not "!LINK_NAME_INPUT!"=="" set LINK_NAME=!LINK_NAME_INPUT!
 )
 
@@ -30,12 +30,12 @@ set LINK_DST_DIR=%~dp1
 set LINK_DST_NAME=%~nx1
 set LINK_SRC=%~2
 
-@REM DST がリンク済みなら別パスへのリンクかもしれないので再リンク
+@REM If DST is already linked, it may be linked to a different path, so relink it.
 for /f "delims=" %%i in ('dir /aL /b "%LINK_DST_DIR%" 2^>NUL') do (
 	if /i "%%~i"=="%LINK_DST_NAME%" ( rmdir "%LINK_DST%" )
 )
 
-@REM リンク済みでない DST があればリネームで保護
+@REM If there are any unlinked DSTs, rename and protect them
 for /f %%i in ('%PS_CMD% -c "Get-Date -Format yyyyMMdd_HHmm_ssff"') do (
 	set NEW_NAME=%LINK_DST_NAME%-%%i
 )

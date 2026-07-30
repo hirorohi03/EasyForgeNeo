@@ -12,7 +12,7 @@ class ForgeNeoUiConfig:
         }
 
         if not os.path.exists(cfg_path):
-            with open(cfg_path, "w", encoding="utf-8") as f:  # BOM 不可
+            with open(cfg_path, "w", encoding="utf-8") as f:  # Non-BOM
                 json.dump(
                     {},
                     f,
@@ -20,7 +20,7 @@ class ForgeNeoUiConfig:
 
         with open(cfg_path, "r+", encoding="utf-8") as f:
             cfg = json.load(f)
-            if "easy_forge_neo_ui-config_version" not in cfg:  # ファイル生成なし対策
+            if "easy_forge_neo_ui-config_version" not in cfg:
                 cfg["easy_forge_neo_ui-config_version"] = "0.0.0"
 
             if self.DEBUG_MODE:
@@ -48,7 +48,7 @@ class ForgeNeoUiConfig:
         cfg["img2img/Height/maximum"] = 4096
 
         cfg["txt2img/Prompt/value"] = (
-            "masterpiece, best quality, score_7, safe. An anime girl wearing a black tank-top and denim shorts is standing outdoors. She's holding a rectangular sign out in front of her that reads \"ANIMA\". She's looking at the viewer with a smile. The background features some trees and blue sky with clouds.\n# 起動時の設定を変更したい場合は設定変更後 Settings > Defaults > Apply"
+            "masterpiece, best quality, score_7, safe. An anime girl wearing a black tank-top and denim shorts is standing outdoors. She's holding a rectangular sign out in front of her that reads \"ANIMA\". She's looking at the viewer with a smile. The background features some trees and blue sky with clouds.\n# If you want to change the startup settings, after making the changes, Settings > Defaults > Apply"
         )
         cfg["txt2img/Negative Prompt/value"] = (
         	"worst quality, low quality, score_1, score_2, score_3, blurry, jpeg artifacts, sepia"
@@ -62,7 +62,7 @@ class ForgeNeoUiConfig:
         cfg["customscript/dynamic_prompting.py/txt2img/Dynamic Prompts enabled/value"] = False
         cfg["customscript/dynamic_prompting.py/img2img/Dynamic Prompts enabled/value"] = False
 
-        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True  # GPU ではシードの再現性がなくなる
+        cfg["customscript/tipo.py/txt2img/Use CPU (GGUF)/value"] = True  # GPU lacks reproducibility based on the seed
         cfg["customscript/tipo.py/txt2img/Ban tags/value"] = (
             "background, greyscale, monochrome, hair, eyes, multiple view, censor, pubic"
         )
