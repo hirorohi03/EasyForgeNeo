@@ -28,7 +28,24 @@ Zuntan氏（[@Zuntan03](https://github.com/Zuntan03)）が開発された [Stabl
 
 また、インストールフォルダ内に [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (reForge) をインストールし、モデルと生成画像を共有、一体管理することができます。拙作の [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) インストール済み環境への本作の追加導入にも対応しています。
 
-***
+---
+
+## 📋 Table of Contents
+
+- [主な特徴](#-主な特徴)
+- [コンポーネント](#-コンポーネント)
+- [EasyReforge-Next との比較](#-easyreforge-next-との比較)
+- [動作要件](#%EF%B8%8F-動作要件)
+- [インストール方法](#%EF%B8%8F-インストール方法)
+- [起動方法](#-起動方法)
+- [使用方法](#%EF%B8%8F-使用方法)
+- [更新方法](#-更新方法)
+- [更新履歴](#-更新履歴)
+- [ロードマップ](#%EF%B8%8F-ロードマップ)
+- [既知の制限事項](#%EF%B8%8F-既知の制限事項)
+- [問い合わせ](#-問い合わせ)
+- [開発・クレジット](#-開発クレジット)
+- [免責事項・ライセンス](#%EF%B8%8F-免責事項ライセンス)
 
 ## 💕 主な特徴
 
@@ -215,7 +232,7 @@ reForgeは以下で起動します（初回はセットアップが動作しま�
 
 パッケージとしての基本的な使用方法は[EasyReforge-Next](https://github.com/hirorohi03/EasyReforge/)を参考にしてください。
 
-その他は随時、[私の note 記事](https://note.com/hirorohi03/n/n26a9ca1ef166)に関連記事を追加していく予定です。
+その他は[noteのマガジン](https://note.com/hirorohi03/m/m32c68e6d9cae)に関連記事を随時追加しています。
 
 ## 🔁 更新方法
 
@@ -256,99 +273,120 @@ reForge本体のバージョン指定／解除も同様です。
 
 ### 2026/7/27
 
-- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎` のバージョンを更新しました。
-- `Download\Lora\Anima_Boost\AnimaDMD2.bat` のダウンロードフォルダを修正しました。
-- `Settings` の `Settings for img2img` に `anima_do_reference` を追加しました。
-- `Download\Lora\Anima_Edit\AnimaEdit.bat` を追加しました。
-    - 利用方法は[「Forge NeoでのAnima-Edit (Cosmos Reference + Edit LoRA) の使い方」](https://note.com/hirorohi03/n/na72233a8d6a4)をご覧ください。
+- 追加
+    - `Settings` の `Settings for img2img` に `anima_do_reference` を追加しました。
+    - `Download\Lora\Anima_Edit\AnimaEdit.bat` を追加しました。
+        - 利用方法は[「Forge NeoでのAnima-Edit (Cosmos Reference + Edit LoRA) の使い方」](https://note.com/hirorohi03/n/na72233a8d6a4)をご覧ください。
+- 修正
+    - `Download\Lora\Anima_Boost\AnimaDMD2.bat` のダウンロードフォルダを修正しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
 
 ### 2026/7/21
 
-- `EasyForgeNeoInstaller.bat` または `Update.bat` 実行時、Civitai Helper Browser の BaseModel 定義ファイル (`supported_models.py`) を置換する処理を追加しました。
-- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎` のバージョンを更新しました。
-- `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` のバージョンを更新しました。
-- `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0.bat` を追加しました。
-- `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0b.bat` を追加しました。
-- `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.1.bat` を追加しました。
-- `Download\DiffusionModels\Anima_Official\anima-turbo-v1.0.bat` を追加しました。
-- `Download\DiffusionModels\Anima_Official\anima-preview.bat` を削除しました。
-- `Download\DiffusionModels\Anima_Official\anima-preview2.bat` を削除しました。
-- `Download\src\Anima_Standard.bat` に `aesthetic-v1.1` と `turbo-v1.0` を追加しました。
+- 追加
+    - `EasyForgeNeoInstaller.bat` または `Update.bat` 実行時、Civitai Helper Browser の BaseModel 定義ファイル (`supported_models.py`) を置換する処理を追加しました。
+- ダウンロードバッチの追加
+    - `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0.bat` を追加しました。
+    - `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0b.bat` を追加しました。
+    - `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.1.bat` を追加しました。
+    - `Download\DiffusionModels\Anima_Official\anima-turbo-v1.0.bat` を追加しました。
+    - `Download\src\Anima_Standard.bat` に `aesthetic-v1.1` と `turbo-v1.0` を追加しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Official\anima-preview.bat` を削除しました。
+    - `Download\DiffusionModels\Anima_Official\anima-preview2.bat` を削除しました。
 
 ### 2026/7/1
 
-- `Download\DiffusionModels\Anima_Custom\botan_anima.bat` のバージョンを更新しました。
-- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
-- `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
-- `Download\ControlNet\Anima\animaTileRepair.bat` のバージョンを更新しました。
-- `Download\src\AnimaCommon_Minimum.bat` を修正しました。
-- Ollama のバージョンを v0.24.0 から v0.31.1 に更新しました。 (EasyTools)
-
-### 2026/6/20
-
-- `Download\ControlNet\Anima\anima-lllite-regional.bat` を追加しました。
-- `Download\ControlNet\Anima\animaTileRepair.bat` を追加しました。
-- `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+- 更新
+    - Ollama のバージョンを v0.24.0 から v0.31.1 に更新しました。 (EasyTools)
+- 修正
+    - `Download\src\AnimaCommon_Minimum.bat` を修正しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\botan_anima.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+    - `Download\ControlNet\Anima\animaTileRepair.bat` のバージョンを更新しました。
 
 <details>
 <summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
 <div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
+### 2026/6/20
+
+- ダウンロードバッチの追加
+    - `Download\ControlNet\Anima\anima-lllite-regional.bat` を追加しました。
+    - `Download\ControlNet\Anima\animaTileRepair.bat` を追加しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+
 ### 2026/6/13
 
-- `Download\ControlNet\Anima` を追加しました。
-- `Download\src\AnimaCommon_Minimum.bat` に `Download\ControlNet\Anima` を追加しました。
+- 追加
+    - `Download\ControlNet\Anima` を追加しました。
+    - `Download\src\AnimaCommon_Minimum.bat` に `Download\ControlNet\Anima` を追加しました。
 
 ### 2026/6/12
 
-- `Download\Lora\Anima_Official\copycat-anima.bat` のバージョンを更新しました。
-- `Download\Lora\Anima_Official\hassakuAnima.bat` のバージョンを更新しました。
+- ダウンロードバッチの更新
+    - `Download\Lora\Anima_Official\copycat-anima.bat` のバージョンを更新しました。
+    - `Download\Lora\Anima_Official\hassakuAnima.bat` のバージョンを更新しました。
 
 ### 2026/6/8
 
-- `Download\Lora\Anima_Official\AnimaIka.bat` のバージョンを更新しました。
-- `Download\Lora\Anima_Official\botan_anima.bat` のバージョンを更新しました。
+- ダウンロードバッチの更新
+    - `Download\Lora\Anima_Official\AnimaIka.bat` のバージョンを更新しました。
+    - `Download\Lora\Anima_Official\botan_anima.bat` のバージョンを更新しました。
 
 ### 2026/6/5
 
-- `Download\Lora\Anima_Official\HakushiMixAnima.bat` のバージョンを更新しました。
-- `Download\Lora\Anima_Official\WAI-ANIMA.bat` のバージョンを更新しました。
+- ダウンロードバッチの更新
+    - `Download\Lora\Anima_Official\HakushiMixAnima.bat` のバージョンを更新しました。
+    - `Download\Lora\Anima_Official\WAI-ANIMA.bat` のバージョンを更新しました。
 
 ### 2026/5/31
 
-- `Download\Lora\Anima_Official\botan_anima.bat` のバージョンを更新しました。（`botan_animaPre.bat` からリネーム）
+- ダウンロードバッチの更新
+    - `Download\Lora\Anima_Official\botan_anima.bat` のバージョンを更新しました。（`botan_animaPre.bat` からリネーム）
 
 ### 2026/5/27
 
-- `Download\Lora\Anima_Official\AnimaTurbo.bat` のバージョンを更新しました。
+- ダウンロードバッチの更新
+    - `Download\Lora\Anima_Official\AnimaTurbo.bat` のバージョンを更新しました。
 
 ### 2026/5/24
 
-- `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
 
 ### 2026/5/23
 
-- 拡張機能の [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)  を [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) に変更しました。
-    - 既にインストール済みの場合、 Civitai Browser Neo は自動で削除されません。不要な場合はエクスプローラーで `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` フォルダを削除してください。
-    - Civitai Browser と Civitai Helper は併用可能ですが、メタデータのファイル名 (`Model\*\モデル名.json`) が同一かつ別形式のため一方でメタデータ表示が欠落することがあります。
-    - Civitai Helperで `Scan` してメタデータを作成する前に、Civitai Brouserが作成した `Model\*\*.json` をエクスプローラーで削除してください。
+- 変更
+    - 拡張機能の [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)  を [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) に変更しました。
+        - 既にインストール済みの場合、 Civitai Browser Neo は自動で削除されません。不要な場合はエクスプローラーで `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` フォルダを削除してください。
+        - Civitai Browser と Civitai Helper は併用可能ですが、メタデータのファイル名 (`Model\*\モデル名.json`) が同一ファイル名かつ別形式のため一方でメタデータ表示が欠落することがあります。
+        - Civitai Helperで `Scan` してメタデータを作成する前に、Civitai Brouserが作成した `Model\*\*.json` をエクスプローラーで削除してください。
 
 ### 2026/5/22
 
-- `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` を追加しました。
+- ダウンロードバッチの追加
+    - `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` を追加しました。
 
 ### 2026/5/21
 
-- Ollama起動バッチ `OllamaStart.bat` を追加しました。
-    - システムにOllamaがインストール済みの場合はそちらを利用します。（`ollama ps` を実行）
-    - Ollamaが未インストールの場合は、`EasyTools\Ollama\env` にOllama Portableをインストールします。
-    - [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) から利用することを想定しています。チャットAIとして利用するバッチはありません。
-- Ollama用LLM/VLMモデルダウンロードバッチ `Download\Ollama` を追加しました。
-    - システムにOllamaがインストール済みの場合はそちらの指定先に保存されます。（標準では `C:\Users\ユーザー名\.ollama\models`）
-    - EasyForgeNeoでOllamaをインストールした場合は、`Model\Ollama` に保存されます。
+- 追加
+    - Ollama起動バッチ `OllamaStart.bat` を追加しました。
+        - システムにOllamaがインストール済みの場合はそちらを利用します。（`ollama ps` を実行）
+        - Ollamaが未インストールの場合は、`EasyTools\Ollama\env` にOllama Portableをインストールします。
+        - [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) から利用することを想定しています。チャットAIとして利用するバッチはありません。
+    - Ollama用LLM/VLMモデルダウンロードバッチ `Download\Ollama` を追加しました。
+        - システムにOllamaがインストール済みの場合はそちらの指定先に保存されます。（標準では `C:\Users\ユーザー名\.ollama\models`）
+        - EasyForgeNeoでOllamaをインストールした場合は、`Model\Ollama` に保存されます。
 > [!IMPORTANT]
 > - Ollama関連バッチの初回起動時に `ollama.exe` のWindowsファイアウォールアクセス許可ポップアップが出ます。`ollama.exe` がモデルをダウンロードするための「受信の規則」です。このポップアップで許可しなかった場合に後から許可したくなった場合は、Windows Defenter ファイアウォールの設定で、該当する `ollama.exe` への通信を許可してください。
-- Anima派生モデルのダウンロードバッチを更新しました。
+- ダウンロードバッチの更新
     - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
     - `Download\DiffusionModels\Anima_Custom\copycat-anima.bat` のバージョンを更新しました。
 
@@ -382,11 +420,13 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📞 問い合わせ
 
-本作について分からないこと・不具合・要望がありましたら [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues) にてお知らせください。GitHubに慣れてない人は [X](https://x.com/hirorohi003) や [note](https://note.com/hirorohi03/n/n26a9ca1ef166) 関連記事のコメント欄でも結構です。
+本作について分からないこと・不具合・要望がありましたら極力 [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues) にてお問い合わせください。軽い質問や要望であれば [X](https://x.com/hirorohi003) や [noteの質問箱](https://note.com/qa/hirorohi03) でも結構です。
 - Forge NeoおよびreForgeの各WebUI本体、拡張機能、その他の各ソフトウェア、モデルそのものに関するものはそれぞれの配布元にお問い合わせ願います。
     - 分かるものはお答えするかもしれませんが、基本的には無視するかクローズします。
     - 逆に本作について、他の開発者へのお問い合わせはおやめください。
-- 本作固有のパッケージング由来の問題なのか、各ソフトウェア由来の問題なのか、可能な限り切り分けをお願いします。
+- 不具合連絡については以下を守るようお願いします。
+    - 本作固有のパッケージング由来の問題なのか、各ソフトウェア由来の問題なのか、可能な限り切り分けをお願いします。
+    - どのような環境で、どのような操作をして、どのような現象が発生したのかや、出力されているエラーメッセージ等をお知らせください。
 
 ## 🤝 開発・クレジット
 

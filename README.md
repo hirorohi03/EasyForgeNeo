@@ -28,7 +28,24 @@ This tool is specifically optimized for image generation using **Anima** ([circl
 
 Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) (reForge) within the same installation folder, enabling you to share and manage models and generated images in an integrated manner. It also supports seamlessly adding this tool to an existing environment where my [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge) is already installed.
 
-***
+---
+
+## 📋 Table of Contents
+
+- [Key Features](#-key-features)
+- [Components](#-components)
+- [Comparison with EasyReforge-Next](#-comparison-with-easyreforge-next)
+- [System Requirements](#%EF%B8%8F-system-requirements)
+- [Installation](#%EF%B8%8F-installation)
+- [How to Launch](#-how-to-launch)
+- [Usage](#%EF%B8%8F-usage)
+- [How to Update](#-how-to-update)
+- [Changelog](#-changelog)
+- [Roadmap](#%EF%B8%8F-roadmap)
+- [Known Limitations](#%EF%B8%8F-known-limitations)
+- [Support & Inquiries](#-support--inquiries)
+- [Credits & Acknowledgements](#-credits--acknowledgements)
+- [Disclaimer & License](#%EF%B8%8F-disclaimer--license)
 
 ## 💕 Key Features
 
@@ -215,7 +232,7 @@ If you want to customize your launch arguments freely, copy either `ForgeNeo_Fas
 
 For basic usage of this package, please refer to [EasyReforge-Next](https://github.com/hirorohi03/EasyReforge/).
 
-Additional guides and tips will be published on [my note.com articles](https://note.com/hirorohi03/n/n26a9ca1ef166) from time to time.
+I am also adding related articles to [note's Magazine](https://note.com/hirorohi03/m/m32c68e6d9cae) on an ongoing basis.
 
 ## 🔁 How to Update
 
@@ -256,99 +273,120 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ### 2026/7/27
 
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎`
-- Fix the download folder of `Download\Lora\Anima_Boost\AnimaDMD2.bat`
-- Added `anima_do_reference` to `Settings for img2img` in `Settings`
-- Added `Download\Lora\Anima_Edit\AnimaEdit.bat`
-    - For instructions on how to use this LoRA, please see [“How to Use Anima-Edit (Cosmos Reference + Edit LoRA) on Forge Neo”](https://note.com/hirorohi03/n/na72233a8d6a4).
+- New
+    - Added `anima_do_reference` to `Settings for img2img` in `Settings`
+    - Added `Download\Lora\Anima_Edit\AnimaEdit.bat`
+        - For instructions on how to use this LoRA, please see [“How to Use Anima-Edit (Cosmos Reference + Edit LoRA) on Forge Neo”](https://note.com/hirorohi03/n/na72233a8d6a4).
+- Fix
+    - Fix the download folder of `Download\Lora\Anima_Boost\AnimaDMD2.bat`
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
 
 ### 2026/7/21
 
-- Added a process to replace the BaseModel definition file (`supported_models.py`) of Civitai Helper Browser when `EasyForgeNeoInstaller.bat` or `Update.bat` are run.
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat‎`
-- Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
-- Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0.bat`
-- Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0b.bat`
-- Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.1.bat`
-- Added `Download\DiffusionModels\Anima_Official\anima-turbo-v1.0.bat`
-- Deleted `Download\DiffusionModels\Anima_Official\anima-preview.bat`
-- Deleted `Download\DiffusionModels\Anima_Official\anima-preview2.bat`
-- Added `aesthetic-v1.1` and `turbo-v1.0` to `Download\src\Anima_Standard.bat`
+- New
+    - Added a process to replace the BaseModel definition file (`supported_models.py`) of Civitai Helper Browser when `EasyForgeNeoInstaller.bat` or `Update.bat` are run.
+- New Download batch
+    - Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0.bat`
+    - Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.0b.bat`
+    - Added `Download\DiffusionModels\Anima_Official\anima-aesthetic-v1.1.bat`
+    - Added `Download\DiffusionModels\Anima_Official\anima-turbo-v1.0.bat`
+    - Added `aesthetic-v1.1` and `turbo-v1.0` to `Download\src\Anima_Standard.bat`
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
+    - Deleted `Download\DiffusionModels\Anima_Official\anima-preview.bat`
+    - Deleted `Download\DiffusionModels\Anima_Official\anima-preview2.bat`
 
 ### 2026/7/1
 
-- Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
-- Updated the version of `Download\ControlNet\Anima\animaTileRepair.bat`
-- Fix `Download\src\AnimaCommon_Minimum.bat`
-- Update Ollama version from v0.24.0 to v0.31.1 (EasyTools)
-
-### 2026/6/20
-
-- Added `Download\ControlNet\Anima\anima-lllite-regional.bat`
-- Added `Download\ControlNet\Anima\animaTileRepair.bat`
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+- Update
+    - Update Ollama version from v0.24.0 to v0.31.1 (EasyTools)
+- Fix
+    - Fix `Download\src\AnimaCommon_Minimum.bat`
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+    - Updated the version of `Download\ControlNet\Anima\animaTileRepair.bat`
 
 <details>
 <summary><b>Old Changelog (Click to expand)</b></summary>
 <div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
+### 2026/6/20
+
+- New Download batch
+    - Added `Download\ControlNet\Anima\anima-lllite-regional.bat`
+    - Added `Download\ControlNet\Anima\animaTileRepair.bat`
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+
 ### 2026/6/13
 
-- Added `Download\ControlNet\Anima`
-- Added `Download\ControlNet\Anima` to `Download\src\AnimaCommon_Minimum.bat`
+- New
+    - Added `Download\ControlNet\Anima`
+    - Added `Download\ControlNet\Anima` to `Download\src\AnimaCommon_Minimum.bat`
 
 ### 2026/6/12
 
-- Updated the version of `Download\Lora\Anima_Official\copycat-anima.bat`
-- Updated the version of `Download\Lora\Anima_Official\hassakuAnima.bat`
+- Update of Download batch
+    - Updated the version of `Download\Lora\Anima_Official\copycat-anima.bat`
+    - Updated the version of `Download\Lora\Anima_Official\hassakuAnima.bat`
 
 ### 2026/6/8
 
-- Updated the version of `Download\Lora\Anima_Official\AnimaIka.bat`
-- Updated the version of `Download\Lora\Anima_Official\botan_anima.bat`
+- Update of Download batch
+    - Updated the version of `Download\Lora\Anima_Official\AnimaIka.bat`
+    - Updated the version of `Download\Lora\Anima_Official\botan_anima.bat`
 
 ### 2026/6/5
 
-- Updated the version of `Download\Lora\Anima_Official\HakushiMixAnima.bat`
-- Updated the version of `Download\Lora\Anima_Official\WAI-ANIMA.bat`
+- Update of Download batch
+    - Updated the version of `Download\Lora\Anima_Official\HakushiMixAnima.bat`
+    - Updated the version of `Download\Lora\Anima_Official\WAI-ANIMA.bat`
 
 ### 2026/5/31
 
-- Updated the version of `Download\Lora\Anima_Official\botan_anima.bat` (Renamed from `botan_animaPre.bat`)
+- Update of Download batch
+    - Updated the version of `Download\Lora\Anima_Official\botan_anima.bat` (Renamed from `botan_animaPre.bat`)
 
 ### 2026/5/27
 
-- Updated the version of `Download\Lora\Anima_Official\AnimaTurbo.bat`
+- Update of Download batch
+    - Updated the version of `Download\Lora\Anima_Official\AnimaTurbo.bat`
 
 ### 2026/5/24
 
-- Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
 
  ### 2026/5/23
 
-- I have changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
-    - If it is already installed, Civitai Browser Neo will not be automatically removed. If you no longer need it, please delete the `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` folder using File Explorer.
-    - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
-    - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.
+- Change
+    - I have changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
+        - If it is already installed, Civitai Browser Neo will not be automatically removed. If you no longer need it, please delete the `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` folder using File Explorer.
+        - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
+        - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.
 
 ### 2026/5/22
 
-- Added `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
+- New Download batch
+    - Added `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
 
 ### 2026/5/21
- 
-- Added the Ollama startup batch file `OllamaStart.bat`.
-    - If Ollama is already installed on the system, it will be used. (Runs `ollama ps`)
-    - If Ollama is not installed, Ollama Portable will be installed in `EasyTools\Ollama\env`.
-    - This is intended to be used via [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO). There is no batch for using it as a chat AI.
-- Added the Ollama LLM/VLM model download batch file `Download\Ollama`.
-    - If Ollama is already installed on the system, models will be saved to its designated location. (Default is `C:\Users\Username\.ollama\models`)
-    - If Ollama was installed via EasyForgeNeo, models will be saved in `Model\Ollama`.
+
+- New 
+    - Added the Ollama startup batch file `OllamaStart.bat`.
+        - If Ollama is already installed on the system, it will be used. (Runs `ollama ps`)
+        - If Ollama is not installed, Ollama Portable will be installed in `EasyTools\Ollama\env`.
+        - This is intended to be used via [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO). There is no batch for using it as a chat AI.
+    - Added the Ollama LLM/VLM model download batch file `Download\Ollama`.
+        - If Ollama is already installed on the system, models will be saved to its designated location. (Default is `C:\Users\Username\.ollama\models`)
+        - If Ollama was installed via EasyForgeNeo, models will be saved in `Model\Ollama`.
 > [!IMPORTANT]
 > - When you run an Ollama-related batch file for the first time, a Windows Firewall permission prompt for `ollama.exe` will appear. This is an “Inbound Rule” that allows `ollama.exe` to download models. If you did not grant permission in this prompt but later decide to allow it, please go to the Windows Defender Firewall settings and allow communication for `ollama.exe`.
-- Updated the download batch for Anima custom models.
+- Update of Download batch
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\copycat-anima.bat`
 
@@ -382,11 +420,13 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📞 Support & Inquiries
 
-If you have any questions, encounter bugs, or have feature requests regarding this project, please let me know via [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues). For those unfamiliar with GitHub, comments on my [X](https://x.com/hirorohi003) or related articles on [note](https://note.com/hirorohi03/n/n26a9ca1ef166) are also welcome.
+If you have any questions, encounter any bugs, or have any requests regarding this product, please contact me via [Issues](https://github.com/hirorohi03/EasyForgeNeo/issues) whenever possible. For general questions or requests, you’re also welcome to use [X](https://x.com/hirorohi003) or the [note Q&A](https://note.com/qa/hirorohi03).
 - For issues regarding the core systems of Forge Neo, reForge, extensions, other external software components, or models themselves, please contact their respective upstream developers.
     - While I might answer things I am familiar with, such inquiries will generally be ignored or closed.
     - Conversely, please do not contact other developers regarding problems unique to this installer package.
-- Please attempt to isolate whether the issue stems from this specific packaging or from the underlying software components as much as possible before reaching out.
+- Please follow the guidelines below when reporting issues.
+    - Please try to determine, as much as possible, whether the issue stems from the packaging specific to this product or from the software itself.
+    - Please let us know the environment in which the issue occurred, the actions you took, the symptoms observed, and any error messages displayed.
 
 ## 🤝 Credits & Acknowledgements
 
