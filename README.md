@@ -124,7 +124,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Same as left | Improve the display of image information |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | Improve the prompt/negative prompt input box |
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | Visually adjuster the weights of LoRA |
-| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | ~[CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)~<BR> [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | Browse, download, and manage your CivitAI models |
+| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | Browse, download, and manage your CivitAI models |
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | Localize UI into Japanese |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
@@ -194,7 +194,7 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 <details>
 <summary><b>TIPS (Click to expand)</b></summary>
 
-> - If a GeForce RTX 30 series GPU (Ampere architecture, Compute Capability 8.6) or higher is detected, Forge Neo will be automatically configured with `--sage --flash --nunchaku` enabled.
+> - If a GeForce RTX 30 series GPU (Ampere architecture, Compute Capability 8.6) or higher is detected, Forge Neo will be automatically configured with `--sage --flash` enabled.
 > - Detection may not work correctly in multi-GPU environments (we will consider addressing this if detailed feedback/information is provided).
 
 </div>
@@ -270,6 +270,14 @@ The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 Changelog
+
+### 2026/8/20
+
+- 変更
+    - When setting up Forge Neo, changed the options from `--sage --flash --nunchaku` to `--sage --flash` when a GeForce RTX 30 Series or higher GPU is detected.
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
 
 ### 2026/7/31
 

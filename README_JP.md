@@ -124,7 +124,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | ← | 画像情報表示の美化 |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | プロンプト入力欄を改善 |
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | LoRAの重みを視覚的に調整 |
-| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | ~[CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)~<BR> [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | CivitAIのモデルを閲覧、ダウンロード、管理 |
+| [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | CivitAIのモデルを閲覧、ダウンロード、管理 |
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | UIを日本語化 |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | プロンプトエンジニアリング（Enhancer、Interrogator など） |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | ← | キャラクターの詳細や要素のタグをプロンプトに追加 |
@@ -194,7 +194,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 <details>
 <summary><b>TIPS（クリックすると開きます）</b></summary>
 
-> - GeForce RTX 30 シリーズ（Ampereアーキテクチャ、Compute Capability 8.6）以上のGPUを検知できた場合は、`--sage --flash --nunchaku` を有効にしてForge Neoをセットアップします。
+> - GeForce RTX 30 シリーズ（Ampereアーキテクチャ、Compute Capability 8.6）以上のGPUを検知できた場合は、`--sage --flash` を有効にしてForge Neoをセットアップします。
 > - マルチGPU環境では正常に検知できない可能性があります（詳細な情報を提供いただければ対応を検討します）。
 
 </div>
@@ -270,6 +270,14 @@ reForge本体のバージョン指定／解除も同様です。
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 更新履歴
+
+### 2026/8/20
+
+- 変更
+    - Forge Neoをセットアップにおいて、GeForce RTX 30 シリーズ以上のGPUを検知できた場合のオプションを `--sage --flash --nunchaku` から  `--sage --flash` に変更しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\botan_anima.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` のバージョンを更新しました。
 
 ### 2026/7/31
 
