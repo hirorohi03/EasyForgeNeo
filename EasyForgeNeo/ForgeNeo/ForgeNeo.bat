@@ -27,7 +27,7 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 call %IS_AMPERE%
 if %ERRORLEVEL% equ 0 (
-    set "LAUNCH_ARGS=--exit --sage --flash --nunchaku %*"
+    set "LAUNCH_ARGS=--exit --sage --flash %*"
 ) else (
     set "LAUNCH_ARGS=--exit %*"
 )
