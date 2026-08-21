@@ -60,8 +60,8 @@ echo xcopy /SQY %~dp0src\Stable-diffusion-webui-civitai-helper-RED-UPDATE\suppor
 xcopy /SQY %~dp0src\Stable-diffusion-webui-civitai-helper-RED-UPDATE\supported_models.py Stable-diffusion-webui-civitai-helper-RED-UPDATE\browser\
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM https://github.com/SiliconeShojo/ScribeNEO
-call %GITHUB_CLONE_OR_PULL% SiliconeShojo ScribeNEO
+@REM https://github.com/hirorohi03/ScribeNEO
+call %GITHUB_CLONE_OR_PULL% hirorohi03 ScribeNEO
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/KohakuBlueleaf/z-tipo-extension
