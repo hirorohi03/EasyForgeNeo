@@ -8,7 +8,7 @@ set PROJECT_MODEL_DOWNLOAD_BAT=%~dp0Download\Anima_Minimum.bat
 set PROJECT_MODEL_DOWNLOAD_BAT2=%~dp0Download\Illustrious_Minimum.bat
 
 set PROJECT_URL=https://github.com/hirorohi03/%PROJECT_NAME%
-set PROJECT_BRANCH=main
+set PROJECT_BRANCH=uv
 set "PROJECT_DIR=%~dp0."
 set "EASY_TOOLS_DIR=%~dp0EasyTools"
 
@@ -160,8 +160,8 @@ call :INIT_REPO %PROJECT_DIR% %PROJECT_URL% %PROJECT_BRANCH%
 if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
 call %EASY_TOOLS_DIR%\Civitai\Civitai_ApiKey.bat
-call %PROJECT_MODEL_DOWNLOAD_BAT%
-call %PROJECT_MODEL_DOWNLOAD_BAT2%
+@REM call %PROJECT_MODEL_DOWNLOAD_BAT%
+@REM call %PROJECT_MODEL_DOWNLOAD_BAT2%
 
 call %PROJECT_SETUP_BAT%
 if %ERRORLEVEL% neq 0 ( exit /b 1 )
