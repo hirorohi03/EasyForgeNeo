@@ -1,2 +1,2 @@
 @echo off
-call %~dp0ForgeNeo_NoOptions.bat %*
+call %~dp0ForgeNeo_NoOptions.bat --uv %*

@@ -21,15 +21,18 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 popd
 pushd %~dp0..\..\sd-webui-forge-neo
 
+call %EASY_TOOLS%\Uv\Uv_SetPath.bat
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 echo 3.13.12> %EASY_TOOLS%\Python\Python_DefaultVersion.txt
 call %EASY_TOOLS%\Python\Python_Activate.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 call %IS_AMPERE%
 if %ERRORLEVEL% equ 0 (
-    set "LAUNCH_ARGS=--exit --sage --flash %*"
+    set "LAUNCH_ARGS=--uv --exit --sage --flash %*"
 ) else (
-    set "LAUNCH_ARGS=--exit %*"
+    set "LAUNCH_ARGS=--uv --exit %*"
 )
 
 echo python %LAUNCH_PY% %LAUNCH_ARGS%

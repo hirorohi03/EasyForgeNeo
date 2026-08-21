@@ -14,6 +14,8 @@ if not exist %~dp0sd-webui-forge-neo\venv\ (
 
 pushd %~dp0sd-webui-forge-neo
 
+call %~dp0EasyTools\Uv\Uv_SetPath.bat
+
 @REM If you need to update styles.csv, back up styles.csv with a different filename
 echo call %~dp0EasyForgeNeo\ForgeNeo\ForgeNeoConfig.bat config.json
 call %~dp0EasyForgeNeo\ForgeNeo\ForgeNeoConfig.bat config.json
