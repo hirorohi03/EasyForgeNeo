@@ -126,7 +126,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | LoRAの重みを視覚的に調整 |
 | [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | CivitAIのモデルを閲覧、ダウンロード、管理 |
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | UIを日本語化 |
-| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | プロンプトエンジニアリング（Enhancer、Interrogator など） |
+| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/hirorohi03/ScribeNEO) | プロンプトエンジニアリング（Enhancer、Interrogator など） |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | ← | キャラクターの詳細や要素のタグをプロンプトに追加 |
 
 </div>
@@ -270,6 +270,11 @@ reForge本体のバージョン指定／解除も同様です。
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 更新履歴
+
+### 2026/8/21
+
+- 変更
+    - 拡張機能ScribeNEOのリポジトリが開発者の[SiliconeShojo](https://github.com/SiliconeShojo)によって削除されたため、hirorohi03が復元した[リポジトリ](https://github.com/hirorohi03/ScribeNEO)に変更しました。
 
 ### 2026/8/20
 

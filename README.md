@@ -126,7 +126,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | Visually adjuster the weights of LoRA |
 | [Civitai Helper](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper) | [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) | Browse, download, and manage your CivitAI models |
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | Localize UI into Japanese |
-| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/SiliconeShojo/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
+| [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/hirorohi03/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
 
 </div>
@@ -271,9 +271,14 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/8/21
+
+- Changes
+    - Since the repository for the ScribeNEO extension was deleted by the developer [SiliconeShojo](https://github.com/SiliconeShojo), I have switched to the [repository](https://github.com/hirorohi03/ScribeNEO) restored by hirorohi03.
+
 ### 2026/8/20
 
-- 変更
+- Changes
     - When setting up Forge Neo, changed the options from `--sage --flash --nunchaku` to `--sage --flash` when a GeForce RTX 30 Series or higher GPU is detected.
 - Update of Download batch
     - Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
