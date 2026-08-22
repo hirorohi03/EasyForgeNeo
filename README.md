@@ -68,7 +68,8 @@ Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://g
 | **🔧 Component** | **🆕 Version** | **📝 Description** |
 | :--- | :--- | :--- |
 | [Git](https://git-scm.com/) | 2.53.0.3 | Installed/updated as needed |
-| [Python](https://www.python.org/downloads/release/python-31312/) | 3.13.12 | venv version (v3.10.11 used for reForge) |
+| [Python/CPython](https://www.python.org/) | 3.13 | venv version (v3.10.11 used for reForge) |
+| [Uv](https://github.com/astral-sh/uv/) | 0.12.5 | Installed/updated as needed |
 | [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) & Extensions | Latest | Can be updated by the user |
 | [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) & Extensions | Latest | Can be updated by the user |
 | Anima Models & Download Batch | N/A | Downloader for official and derivative Anima models |
@@ -140,7 +141,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 
 - **Windows PC with an NVIDIA GPU**
     - *Note: While Forge Neo itself supports non-NVIDIA GPUs, this installer package does not support them.*
-- **At least 20GB of free storage space**
+- **At least 25GB of free storage space**
     - *This is the absolute minimum. You will need significantly more space to add models, extensions, or store large amounts of generated images.*
 - **No spaces or special characters in the folder path**
 - **NVIDIA Driver version 580 or higher**
@@ -270,6 +271,15 @@ The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 Changelog
+
+### 2026/8/22
+
+- New
+    - Now supports `uv`. This speeds up venv operations such as new installations and extension installations.
+        - If `uv` is already installed on the system, it will be used.
+        - If `uv` is not installed, it will set up the `uv` environment—including caches—in `EasyTools\uv\env`.
+        - It builds a venv using `uv`. If a venv already exists, it does nothing. If you want to rebuild the venv using `uv`, please manually delete the venv before launching Forge Neo.
+        - It sets up and launches Forge Neo with the `--uv` option.
 
 ### 2026/8/21
 
@@ -425,7 +435,7 @@ The process is identical for pinning/unpinning the reForge core version:
 - ~Download batch file for LLM models~
 - ~Translating messages into English~
 - Specifying/unpinning Forge Neo versions using Git tags
-- `uv` package manager support
+- ~`uv` package manager support~
 
 </div>
 </details>

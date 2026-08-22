@@ -68,7 +68,8 @@ Zuntan氏（[@Zuntan03](https://github.com/Zuntan03)）が開発された [Stabl
 | **🔧 コンポーネント** | **🆕 バージョン** | **📝 説明** |
 | :--- | :--- | :--- |
 | [Git](https://git-scm.com/) | 2.53.0.3 | 必要に応じてインストール/更新 |
-| [Python](https://www.python.org/downloads/release/python-31312/) | 3.13.12 | venv版（reForge 用は3.10.11） |
+| [Python/CPython](https://www.python.org/) | 3.13 | venv版（reForge 用は3.10.11） |
+| [Uv](https://github.com/astral-sh/uv/) | 0.12.5 | 必要に応じてインストール/更新 |
 | [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) および拡張機能 | 最新版 | ユーザーが任意に更新 |
 | [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) および拡張機能 | 最新版 | ユーザーが任意に更新 |
 | Anima モデルおよびダウンロードバッチ | － | Animaの公式モデル、派生モデルのダウンローダー |
@@ -140,7 +141,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 
 - NVIDIA GPU の Windows PCであること
     - Forge Neo は NVIDIA 以外の GPU もサポートしていますが本作は未サポートです。
-- 20GB 以上の空きストレージがあること
+- 25GB 以上の空きストレージがあること
     - あくまで最低要件です。モデルや拡張機能を追加したり多くの画像を生成したりするにはより多くの容量が必要です。
 - フォルダ名にスペースや特殊文字を含めないこと
 - NVIDIA ドライバーのバージョンが580以上であること
@@ -270,6 +271,15 @@ reForge本体のバージョン指定／解除も同様です。
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 更新履歴
+
+### 2026/8/22
+
+- 追加
+    - uvに対応しました。新規インストールや拡張機能インストール等におけるvenv操作が高速化されます。
+        - システムにuvがインストール済みの場合はそちらを利用します。
+        - uvが未インストールの場合は、`EasyTools\uv\env` にキャッシュ等を含めてuv環境をセットアップします。
+        - uvでvenvを構築します。既存のvenvが存在する場合は何もしません。uvでvenvを再構築したい場合は手動でvenvを削除してからForge Neoを起動してください。
+        - `--uv` オプション付きでForge Neoをセットアップ、起動します。
 
 ### 2026/8/21
 
@@ -425,7 +435,7 @@ reForge本体のバージョン指定／解除も同様です。
 - ~LLMモデルのダウンロードバッチ~
 - ~メッセージの英語化~
 - gitのタグによるForge Neoのバージョン指定／解除
-- uv対応
+- ~uv対応~
 
 </div>
 </details>
