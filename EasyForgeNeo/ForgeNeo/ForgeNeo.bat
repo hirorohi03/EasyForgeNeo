@@ -24,8 +24,15 @@ pushd %~dp0..\..\sd-webui-forge-neo
 call %EASY_TOOLS%\Uv\Uv_SetPath.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-echo 3.13.12> %EASY_TOOLS%\Python\Python_DefaultVersion.txt
-call %EASY_TOOLS%\Python\Python_Activate.bat
+@rem echo 3.13.12> %EASY_TOOLS%\Python\Python_DefaultVersion.txt
+@rem call %EASY_TOOLS%\Python\Python_Activate.bat
+@rem if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+if not exist venv (
+    uv venv venv --python 3.13 --seed
+    if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+)
+call venv\Scripts\activate.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 call %IS_AMPERE%
