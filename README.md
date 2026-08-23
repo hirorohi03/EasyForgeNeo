@@ -278,7 +278,7 @@ The process is identical for pinning/unpinning the reForge core version:
     - Now supports `uv`. This speeds up venv operations such as new installations and extension installations.
         - If `uv` is already installed on the system, it will be used.
         - If `uv` is not installed, it will set up the `uv` environment—including caches—in `EasyTools\uv\env`.
-        - It builds a venv using `uv`. If a venv already exists, it does nothing. If you want to rebuild the venv using `uv`, please manually delete the venv before launching Forge Neo.
+        - It builds a venv using `uv`. If a venv already exists, it does nothing. If you want to rebuild the venv using `uv`, please manually delete `sd-webui-forge-neo\venv` before launching Forge Neo.
         - It sets up and launches Forge Neo with the `--uv` option.
 
 ### 2026/8/21
