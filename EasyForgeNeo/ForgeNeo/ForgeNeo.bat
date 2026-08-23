@@ -29,7 +29,7 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 @rem if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist venv (
-    uv venv venv --python 3.13 --seed
+    uv venv venv --python 3.13.12 --seed
     if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 )
 call venv\Scripts\activate.bat
