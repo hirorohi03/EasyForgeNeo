@@ -141,7 +141,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 
 - NVIDIA GPU の Windows PCであること
     - Forge Neo は NVIDIA 以外の GPU もサポートしていますが本作は未サポートです。
-- 25GB 以上の空きストレージがあること
+- 21GB 以上の空きストレージがあること
     - あくまで最低要件です。モデルや拡張機能を追加したり多くの画像を生成したりするにはより多くの容量が必要です。
 - フォルダ名にスペースや特殊文字を含めないこと
 - NVIDIA ドライバーのバージョンが580以上であること
@@ -272,6 +272,14 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/9/7
+
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Official\anima-aesthetic.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Official\anima-turbo.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
+
 ### 2026/8/22
 
 - 追加
@@ -310,6 +318,10 @@ reForge本体のバージョン指定／解除も同様です。
 - ダウンロードバッチの更新
     - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
 
+<details>
+<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/7/21
 
 - 追加
@@ -337,10 +349,6 @@ reForge本体のバージョン指定／解除も同様です。
     - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
     - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
     - `Download\ControlNet\Anima\animaTileRepair.bat` のバージョンを更新しました。
-
-<details>
-<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/6/20
 

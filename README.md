@@ -141,7 +141,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 
 - **Windows PC with an NVIDIA GPU**
     - *Note: While Forge Neo itself supports non-NVIDIA GPUs, this installer package does not support them.*
-- **At least 25GB of free storage space**
+- **At least 21GB of free storage space**
     - *This is the absolute minimum. You will need significantly more space to add models, extensions, or store large amounts of generated images.*
 - **No spaces or special characters in the folder path**
 - **NVIDIA Driver version 580 or higher**
@@ -272,6 +272,12 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Official\anima-aesthetic.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Official\anima-turbo.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
+
 ### 2026/8/22
 
 - New
@@ -310,6 +316,10 @@ The process is identical for pinning/unpinning the reForge core version:
 - Update of Download batch
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
 
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/7/21
 
 - New
@@ -337,10 +347,6 @@ The process is identical for pinning/unpinning the reForge core version:
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
     - Updated the version of `Download\ControlNet\Anima\animaTileRepair.bat`
-
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/6/20
 
