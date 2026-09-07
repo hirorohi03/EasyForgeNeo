@@ -5,7 +5,7 @@ set HUGGING_FACE=%EASY_TOOLS%\Download\HuggingFace.bat
 pushd %~dp0..\..\..\Model\DiffusionModels
 
 @REM https://huggingface.co/circlestone-labs/Anima
-call %HUGGING_FACE% Anima_Official\ anima-aesthetic-v1.0.safetensors circlestone-labs/Anima split_files/diffusion_models/anima-aesthetic-v1.0.safetensors?
+call %HUGGING_FACE% Anima_Official\ anima-turbo-v1.1.safetensors circlestone-labs/Anima split_files/diffusion_models/anima-turbo-v1.1.safetensors?
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 popd rem %~dp0..\..\..\Model\DiffusionModels
