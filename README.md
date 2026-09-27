@@ -196,7 +196,7 @@ Then, proceed with either **Pattern A** or **Pattern B**.
 <summary><b>TIPS (Click to expand)</b></summary>
 
 > - If a GeForce RTX 30 series GPU (Ampere architecture, Compute Capability 8.6) or higher is detected, Forge Neo will be automatically configured with `--sage --flash` enabled.
-> - Detection may not work correctly in multi-GPU environments (we will consider addressing this if detailed feedback/information is provided).
+> - Detection may not work correctly in multi-GPU environments (I will consider addressing this if detailed feedback/information is provided).
 
 </div>
 </details>
@@ -272,6 +272,15 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/9/27
+
+- Fix
+    - Because there were cases where conflicts occurred during `git pull` operations on the Forge Neo, causing `Update.bat` to fail, I added a fallback process that executes `git reset --hard`. (EasyTools)
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+
+### 2026/9/7
+
 - Update of Download batch
     - Updated the version of `Download\DiffusionModels\Anima_Official\anima-aesthetic.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Official\anima-turbo.bat`
@@ -300,7 +309,11 @@ The process is identical for pinning/unpinning the reForge core version:
     - Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
 
-### 2026/7/31
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
+ ### 2026/7/31
 
 - Changes
     - Messages and comments have been translated into English, or are now displayed in both English and Japanese.
@@ -315,10 +328,6 @@ The process is identical for pinning/unpinning the reForge core version:
     - Fix the download folder of `Download\Lora\Anima_Boost\AnimaDMD2.bat`
 - Update of Download batch
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
-
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/7/21
 
