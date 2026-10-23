@@ -68,7 +68,7 @@ Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://g
 | **🔧 Component** | **🆕 Version** | **📝 Description** |
 | :--- | :--- | :--- |
 | [Git](https://git-scm.com/) | 2.53.0.3 | Installed/updated as needed |
-| [Python/CPython](https://www.python.org/) | 3.13 | venv version (v3.10.11 used for reForge) |
+| [Python/CPython](https://www.python.org/) | 3.13.15 | venv version (v3.10.11 used for reForge) |
 | [Uv](https://github.com/astral-sh/uv/) | 0.12.5 | Installed/updated as needed |
 | [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) & Extensions | Latest | Can be updated by the user |
 | [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) & Extensions | Latest | Can be updated by the user |
@@ -271,6 +271,14 @@ The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 Changelog
+
+### 2026/10/23
+
+- Changes
+    - Updated the Python version from 3.13.12 to 3.13.15 when creating or rebuilding the venv.
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaCatTower.bat`
 
 ### 2026/9/27
 

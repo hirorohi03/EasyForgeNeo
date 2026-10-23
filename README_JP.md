@@ -68,7 +68,7 @@ Zuntan氏（[@Zuntan03](https://github.com/Zuntan03)）が開発された [Stabl
 | **🔧 コンポーネント** | **🆕 バージョン** | **📝 説明** |
 | :--- | :--- | :--- |
 | [Git](https://git-scm.com/) | 2.53.0.3 | 必要に応じてインストール/更新 |
-| [Python/CPython](https://www.python.org/) | 3.13 | venv版（reForge 用は3.10.11） |
+| [Python/CPython](https://www.python.org/) | 3.13.15 | venv版（reForge 用は3.10.11） |
 | [Uv](https://github.com/astral-sh/uv/) | 0.12.5 | 必要に応じてインストール/更新 |
 | [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) および拡張機能 | 最新版 | ユーザーが任意に更新 |
 | [reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) および拡張機能 | 最新版 | ユーザーが任意に更新 |
@@ -271,6 +271,14 @@ reForge本体のバージョン指定／解除も同様です。
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 更新履歴
+
+### 2026/10/23
+
+- 変更
+    - venvを新規構築または再構築する際のPythonのバージョンを3.13.12から3.13.15に更新しました。
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
+    - `Download\DiffusionModels\Anima_Custom\AnimaCatTower.bat` のバージョンを更新しました。
 
 ### 2026/9/27
 
