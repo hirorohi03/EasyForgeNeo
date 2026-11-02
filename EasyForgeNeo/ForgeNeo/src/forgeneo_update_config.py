@@ -12,6 +12,7 @@ class ForgeNeoConfig:
             "0.0.0": self.update_0_0_0,
             "0.1.0": self.update_0_1_0,
             "0.1.1": self.update_0_1_1,
+            "0.1.2": self.update_0_1_2,
         }
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
@@ -109,6 +110,17 @@ class ForgeNeoConfig:
 
         if "anima_do_reference" not in cfg["extra_options_img2img"]:
             cfg["extra_options_img2img"].append("anima_do_reference") # Settings for img2img (setting entries that also appear in img2img interfaces)
+
+        self.backup_styles_csv()
+
+    def update_0_1_2(self, cfg):
+        cfg["easy_forge_neo_config_version"] = "0.1.3"
+
+        cfg["tac_tagFile"] = "danbooru_20250919.csv" # Tag Autocomplete Tag filename
+        cfg["tac_translation.translationFile"] = "danbooru_translations_jp.csv" # Tag Autocomplete Translation filename
+        cfg["quicksettings_list"] = [
+            "tac_tagFile",
+        ]
 
         self.backup_styles_csv()
 

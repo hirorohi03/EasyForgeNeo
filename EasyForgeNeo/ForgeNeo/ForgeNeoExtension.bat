@@ -3,6 +3,7 @@ chcp 65001 > NUL
 set EASY_TOOLS=%~dp0..\..\EasyTools
 set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
 set CURL_CMD=C:\Windows\System32\curl.exe -kL
+set CIVITAI_MODEL_DOWNLOAD_UNZIP=%EASY_TOOLS%\Civitai\Civitai_ModelDownloadUnzip.bat
 
 pushd %~dp0..\..\sd-webui-forge-neo\extensions
 
@@ -13,6 +14,20 @@ if not exist ..\extensions-backup\ (
 @REM https://github.com/eduardoabreu81/sd-webui-tagcomplete-neo
 call %GITHUB_CLONE_OR_PULL% eduardoabreu81 sd-webui-tagcomplete-neo
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+if exist sd-webui-tagcomplete-neo\tags\danbooru_20250919.csv (
+    if exist sd-webui-tagcomplete-neo\tags\danbooru_translations_jp.csv (
+        goto :both_exist
+    )
+)
+
+pushd sd-webui-tagcomplete-neo\tags
+@REM https://civitai.red/models/2018479
+call %CIVITAI_MODEL_DOWNLOAD_UNZIP% .\ danbooruTagCompleteCsv_v1020250919.zip 2018479 2284461
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+popd rem sd-webui-tagcomplete-neo\tags
+
+:both_exist
 
 @REM https://github.com/abzaloff/aadetailer-neoforge
 call %GITHUB_CLONE_OR_PULL% abzaloff aadetailer-neoforge
