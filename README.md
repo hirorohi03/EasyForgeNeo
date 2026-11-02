@@ -121,7 +121,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | N/A | Background coloring to "Enable" buttons |
 | [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | Same as left | Reduce image generation time |
 | [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | N/A | LoRA strength can be set block by block |
-| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip) | Negative effects within regular prompts |
+| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | Same as left | Negative effects within regular prompts |
 | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | Same as left | Improve the display of image information |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | Improve the prompt/negative prompt input box |
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | Visually adjuster the weights of LoRA |
@@ -272,6 +272,15 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/11/2
+
+- Changes
+    - I changed the [sd-forge-negpip](https://github.com/Haoming02/sd-forge-negpip) extension to [sd-webui-negpip](https://github.com/hako-mikan/sd-webui-negpip).
+        - If it is already installed, sd-forge-negpip will simply be disabled; it will not be removed. If you no longer need it, please delete the `sd-webui-forge-neo\extensions\sd-forge-negpip` folder using File Explorer.
+    - I set `danbooru_20250919.csv` and `danbooru_translations_jp.csv` from [Danbooru Tag Complete CSV](https://civitai.red/models/2018479?modelVersionId=2284461) as the default.
+        - `tac_tagfile` will be added to the `Quicksettings List` in `Settings`.
+        - For details, see [“Know-how for tagcomplete (Danbooru tag completion and display in Japanese)”](https://note.com/hirorohi03/n/n4dc0dcc454c3?hl=en).
+
 ### 2026/10/23
 
 - Changes
@@ -295,6 +304,10 @@ The process is identical for pinning/unpinning the reForge core version:
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaYume.bat`
 
+<details>
+<summary><b>Old Changelog (Click to expand)</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/8/22
 
 - New
@@ -317,10 +330,6 @@ The process is identical for pinning/unpinning the reForge core version:
     - Updated the version of `Download\DiffusionModels\Anima_Custom\botan_anima.bat`
     - Updated the version of `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat`
 
-<details>
-<summary><b>Old Changelog (Click to expand)</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
-
  ### 2026/7/31
 
 - Changes
@@ -331,7 +340,7 @@ The process is identical for pinning/unpinning the reForge core version:
 - New
     - Added `anima_do_reference` to `Settings for img2img` in `Settings`
     - Added `Download\Lora\Anima_Edit\AnimaEdit.bat`
-        - For instructions on how to use this LoRA, please see ["How to Use Anima-Edit (Cosmos Reference + Edit LoRA) on Forge Neo"](https://note.com/hirorohi03/n/na72233a8d6a4)
+        - For instructions on how to use this LoRA, please see ["How to use Anima-Edit (Cosmos Reference + Edit LoRA) in Forge Neo"](https://note.com/hirorohi03/n/na72233a8d6a4?hl=en)
 - Fix
     - Fix the download folder of `Download\Lora\Anima_Boost\AnimaDMD2.bat`
 - Update of Download batch
@@ -415,7 +424,7 @@ The process is identical for pinning/unpinning the reForge core version:
  ### 2026/5/23
 
 - Change
-    - I have changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
+    - I changed the [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo) extension to [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE).
         - If it is already installed, Civitai Browser Neo will not be automatically removed. If you no longer need it, please delete the `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` folder using File Explorer.
         - While Civitai Browser and Civitai Helper can be used together, metadata may be missing in one of them because the filenames (`Model\*\ModelName.json`) are identical but the file formats differ.
         - Before using Civitai Helper to `Scan` and create metadata, please delete the `Model\*\*.json` files created by Civitai Browser in the Explorer.

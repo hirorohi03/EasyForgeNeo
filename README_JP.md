@@ -121,7 +121,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 | [Checker of "enable" statuses](https://github.com/shirayu/sd-webui-enable-checker) | N/A | Enableボタンに背景色を付与 |
 | [Calibrated Spectrum Adaptive Forecaster](https://github.com/hirorohi03/sd-webui-forge-spectrum) | ← | 生成時間を短縮 |
 | [LoRA Block Weight](https://github.com/hako-mikan/sd-webui-lora-block-weight) | N/A | LoRA強度をブロック単位で調整 |
-| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | [Forge Negative Prompt in Prompt](https://github.com/Haoming02/sd-forge-negpip) | ポジティブプロンプト内でのネガティブ効果 |
+| [NegPiP - Negative Prompt in Prompt](https://github.com/hako-mikan/sd-webui-negpip) | ← | ポジティブプロンプト内でのネガティブ効果 |
 | [PNG Info Beautify](https://github.com/bluelovers/sd-webui-pnginfo-beautify) | ← | 画像情報表示の美化 |
 | [Prompt All-in-One](https://github.com/Physton/sd-webui-prompt-all-in-one) | [Prompt All-in-One NEO](https://github.com/eduardoabreu81/sd-webui-prompt-all-in-one-neo) | プロンプト入力欄を改善 |
 | [Weight Helper Extension](https://github.com/nihedon/sd-webui-weight-helper) | N/A | LoRAの重みを視覚的に調整 |
@@ -186,7 +186,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 
 ### パターンAとパターンBに共通の情報
 - インストーラーを管理者として実行 **しないで** ください。
-- **`WindowsによってPCが保護されました`** と表示されたら、 **`詳細表示`** から **`実行`** してください。
+- **`WindowsによってPCが保護されました`** と表示されたら、**`詳細表示`** から **`実行`** してください。
 - Anima用LoRAのダウンロードに **[Civitai](https://civitai.com/)** **APIキー** が必要ですので、画面の案内や **[ネット上のノウハウ](https://www.google.com/search?q=civitai+api+key)** に沿って入力してください。
     - APIキーを入力しない場合でもAnima用のDiffusionモデル、TE、VAEはダウンロードされるため、Animaでのお試し画像生成は可能です。
     - EasyReforge(-Next) ではインストール後に拡張機能のCivitai HelperでCivitai APIキーを設定する方式でしたが、EasyForgeNeoでは方式が変更されています。
@@ -272,6 +272,15 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/11/2
+
+- 変更
+    - 拡張機能の [sd-forge-negpip](https://github.com/Haoming02/sd-forge-negpip)  を [sd-webui-negpip](https://github.com/hako-mikan/sd-webui-negpip) に変更しました。
+        - 既にインストール済みの場合、sd-forge-negpip は無効化されるだけで削除されません。不要な場合はエクスプローラーで `sd-webui-forge-neo\extensions\sd-forge-negpip` フォルダを削除してください。
+    - [Danbooru tag complete csv](https://civitai.red/models/2018479?modelVersionId=2284461) の `danbooru_20250919.csv` と `danbooru_translations_jp.csv` を初期セットするようにしました。
+        - `Settings` の `Quicksettings List` に `tac_tagfile` を追加しました。
+        - 詳細は[「tagcompleteのノウハウ（日本語でのDanbooruタグ補完と表示」）](https://note.com/hirorohi03/n/n4dc0dcc454c3)をご覧ください。
+
 ### 2026/10/23
 
 - 変更
@@ -295,6 +304,10 @@ reForge本体のバージョン指定／解除も同様です。
     - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
     - `Download\DiffusionModels\Anima_Custom\AnimaYume.bat` のバージョンを更新しました。
 
+<details>
+<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
+<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
+
 ### 2026/8/22
 
 - 追加
@@ -316,10 +329,6 @@ reForge本体のバージョン指定／解除も同様です。
 - ダウンロードバッチの更新
     - `Download\DiffusionModels\Anima_Custom\botan_anima.bat` のバージョンを更新しました。
     - `Download\DiffusionModels\Anima_Custom\hassakuAnima.bat` のバージョンを更新しました。
-
-<details>
-<summary><b>過去の更新履歴（クリックすると開きます）</b></summary>
-<div style="max-height: 250px; overflow-y: auto; padding: 15px; border-radius: 8px; margin-top: 10px;">
 
 ### 2026/7/31
 
@@ -416,7 +425,7 @@ reForge本体のバージョン指定／解除も同様です。
 
 - 変更
     - 拡張機能の [CivitAI Browser Neo](https://github.com/eduardoabreu81/sd-civitai-browser-neo)  を [Civitai Helper RED UPDATE](https://github.com/Replactionap/Stable-Diffusion-Webui-Civitai-Helper-RED-UPDATE) に変更しました。
-        - 既にインストール済みの場合、 Civitai Browser Neo は自動で削除されません。不要な場合はエクスプローラーで `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` フォルダを削除してください。
+        - 既にインストール済みの場合、Civitai Browser Neo は自動で削除されません。不要な場合はエクスプローラーで `sd-webui-forge-neo\extensions\sd-civitai-browser-neo` フォルダを削除してください。
         - Civitai Browser と Civitai Helper は併用可能ですが、メタデータのファイル名 (`Model\*\モデル名.json`) が同一ファイル名かつ別形式のため一方でメタデータ表示が欠落することがあります。
         - Civitai Helperで `Scan` してメタデータを作成する前に、Civitai Brouserが作成した `Model\*\*.json` をエクスプローラーで削除してください。
 
