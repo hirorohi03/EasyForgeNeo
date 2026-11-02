@@ -13,6 +13,7 @@ class ForgeNeoConfig:
             "0.1.0": self.update_0_1_0,
             "0.1.1": self.update_0_1_1,
             "0.1.2": self.update_0_1_2,
+            "0.1.3": self.update_0_1_3,
         }
         self.styles_csv_path = os.path.join(os.path.dirname(cfg_path), "styles.csv")
 
@@ -120,6 +121,16 @@ class ForgeNeoConfig:
         cfg["tac_translation.translationFile"] = "danbooru_translations_jp.csv" # Tag Autocomplete Translation filename
         cfg["quicksettings_list"] = [
             "tac_tagFile",
+        ]
+
+        self.backup_styles_csv()
+
+    def update_0_1_3(self, cfg):
+        cfg["easy_forge_neo_config_version"] = "0.1.4"
+
+        cfg["disabled_extensions"] = [
+            "model-keyword",
+            "sd-forge-negpip",
         ]
 
         self.backup_styles_csv()

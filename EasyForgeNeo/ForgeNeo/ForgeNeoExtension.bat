@@ -60,7 +60,11 @@ if not exist --sd-webui-ar-plusplus\aspect_ratios.txt (
 )
 
 @REM https://github.com/Haoming02/sd-forge-negpip
-call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-negpip
+@REM call %GITHUB_CLONE_OR_PULL% Haoming02 sd-forge-negpip
+@REM if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM https://github.com/hako-mikan/sd-webui-negpip
+call %GITHUB_CLONE_OR_PULL% hako-mikan sd-webui-negpip
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/bluelovers/sd-webui-pnginfo-beautify
