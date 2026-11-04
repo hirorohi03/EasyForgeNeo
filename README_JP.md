@@ -272,6 +272,11 @@ reForge本体のバージョン指定／解除も同様です。
 
 ## 📖 更新履歴
 
+### 2026/11/4
+
+- 変更
+    - Civitai Helper Browser の BaseModel 定義ファイル (`supported_models.py`) を更新しました。
+
 ### 2026/11/2
 
 - 変更

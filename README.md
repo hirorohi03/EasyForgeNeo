@@ -272,6 +272,11 @@ The process is identical for pinning/unpinning the reForge core version:
 
 ## 📖 Changelog
 
+### 2026/11/4
+
+- Changes
+    - Updated the BaseModel definition file (`supported_models.py`) of Civitai Helper Browser.
+
 ### 2026/11/2
 
 - Changes
