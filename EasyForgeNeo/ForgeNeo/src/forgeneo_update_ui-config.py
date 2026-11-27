@@ -9,6 +9,7 @@ class ForgeNeoUiConfig:
     def __init__(self, cfg_path):
         self.updaters = {
             "0.0.0": self.update_0_0_0,
+            "0.1.0": self.update_0_1_0,
         }
 
         if not os.path.exists(cfg_path):
@@ -66,6 +67,12 @@ class ForgeNeoUiConfig:
         cfg["customscript/tipo.py/txt2img/Ban tags/value"] = (
             "background, greyscale, monochrome, hair, eyes, multiple view, censor, pubic"
         )
+
+    def update_0_1_0(self, cfg):
+        cfg["easy_forge_neo_ui-config_version"] = "0.1.1"
+
+        cfg["customscript/snapref.py/txt2img/SnapRef adapter/value"] = "snapref_v2s_pre1.safetensors"
+        cfg["customscript/snapref.py/img2img/SnapRef adapter/value"] = "snapref_v2s_pre1.safetensors"
 
 if __name__ == "__main__":
     forge_config = ForgeNeoUiConfig(sys.argv[1])

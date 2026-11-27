@@ -103,6 +103,10 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% hirorohi03 sd-webui-forge-spectrum
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/ArcAnima/SnapRef-Forge-Neo
+call %GITHUB_CLONE_OR_PULL% ArcAnima SnapRef-Forge-Neo
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 popd rem %~dp0..\..\sd-webui-forge-neo\extensions
 exit /b 0
 
