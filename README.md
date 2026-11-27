@@ -129,6 +129,7 @@ If there are extensions you need that are not pre-installed in EasyForgeNeo, ple
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | Localize UI into Japanese |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/hirorohi03/ScribeNEO) | Prompt engineering (Enhancer, Interrogator, etc.) |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | Same as left | Add character detail and add extra elements tags into the prompt |
+| N/A |[SnapRef-Forge-Neo](https://github.com/ArcAnima/SnapRef-Forge-Neo) | Character and Style References |
 
 </div>
 </details>
@@ -271,6 +272,26 @@ The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 Changelog
+
+### 2026/11/27
+
+- New
+    -  Added SnapRef.
+        - Added the [SnapRef-Forge-Neo](https://github.com/ArcAnima/SnapRef-Forge-Neo) extension.
+        - Added the SnapRef model download batch `Download/Lora/Anima_SnapRef/Anima_SnapRef.bat`,  `Download/Lora/Anima_SnapRef/Anima_SnapRef_fp8.bat` 
+- Changes
+    - Changes of Initial Download batch `Download\src\AnimaCommon_Minimum.bat`
+        - Added `AnimaSnapRef.bat`
+        - Removed `anima-lllite-any-test-like-1-step1000.bat`
+        - Removed `anima-lllite-any-test-like-1-step2000.bat`
+        - Removed `anima-lllite-inpainting-v1.bat`
+        - Removed `AnimaHighres.bat`
+- Fix
+    - Fixed an issue where `AnimaCommon_Minimum.bat` was not running during updates.
+- New Download batch
+    - Added the LoRA and VAE download batch for Anima RGBA `Download\Anima_RGBA.bat`
+- Update of Download batch
+    - Updated the version of `Download\DiffusionModels\Anima_Custom\AnimaIka.bat`
 
 ### 2026/11/4
 

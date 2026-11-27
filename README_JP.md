@@ -129,6 +129,7 @@ EasyForgeNeo（本作）にインストールされていない拡張機能は�
 | [Localization ja\_JP](https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP) | N/A | UIを日本語化 |
 | [WD14 Tagger](https://github.com/67372a/stable-diffusion-webui-wd14-tagger) | [ScribeNEO](https://github.com/hirorohi03/ScribeNEO) | プロンプトエンジニアリング（Enhancer、Interrogator など） |
 | [TIPO-extension](https://github.com/KohakuBlueleaf/z-tipo-extension) | ← | キャラクターの詳細や要素のタグをプロンプトに追加 |
+| N/A |[SnapRef-Forge-Neo](https://github.com/ArcAnima/SnapRef-Forge-Neo) | キャラクターとスタイルの参照 |
 
 </div>
 </details>
@@ -271,6 +272,26 @@ reForge本体のバージョン指定／解除も同様です。
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 更新履歴
+
+### 2026/11/27
+
+- 追加
+    - SnapRefを追加しました。
+        - 拡張機能の[SnapRef-Forge-Neo](https://github.com/ArcAnima/SnapRef-Forge-Neo)を追加しました。
+        - SnapRefモデルダウンロードバッチ `Download/Lora/Anima_SnapRef/Anima_SnapRef.bat`,  `Download/Lora/Anima_SnapRef/Anima_SnapRef_fp8.bat` を追加しました。
+- 変更
+    - 初期モデルダウンロードバッチ `Download\src\AnimaCommon_Minimum.bat` を変更しました。
+        - `AnimaSnapRef.bat` を追加しました。
+        - `anima-lllite-any-test-like-1-step1000.bat` を削除しました。
+        - `anima-lllite-any-test-like-1-step2000.bat` を削除しました。
+        - `anima-lllite-inpainting-v1.bat` を削除しました。
+        - `AnimaHighres.bat` を削除しました。
+- 修正
+    - 更新時に `AnimaCommon_Minimum.bat` が実行されない問題を修正しました。
+- ダウンロードバッチの追加
+    - Anima RGBA用LoRA・VAEダウンロードバッチ `Download\Anima_RGBA.bat` を追加しました。 
+- ダウンロードバッチの更新
+    - `Download\DiffusionModels\Anima_Custom\AnimaIka.bat` のバージョンを更新しました。
 
 ### 2026/11/4
 
