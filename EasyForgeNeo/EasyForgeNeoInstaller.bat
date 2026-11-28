@@ -72,9 +72,9 @@ cd > NUL
 
 set PORTABLE_GIT_BIN=%EASY_GIT_DIR%\env\PortableGit\bin
 @REM A fourth digit will be added to the patch version (2.53.0, 2.53.0.2, 2.53.0.3, ...)
-set PORTABLE_GIT_VERSION=2.53.0.3
-set PORTABLE_GIT_BASE=2.53.0
-set PORTABLE_GIT_PATCH=3
+set PORTABLE_GIT_VERSION=2.56.1
+set PORTABLE_GIT_BASE=2.56.1
+set PORTABLE_GIT_PATCH=1
 
 if not exist %PORTABLE_GIT_BIN%\ (
 	setlocal enabledelayedexpansion
