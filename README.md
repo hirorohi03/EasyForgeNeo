@@ -67,7 +67,7 @@ Furthermore, it allows you to install [Stable Diffusion WebUI reForge](https://g
 
 | **🔧 Component** | **🆕 Version** | **📝 Description** |
 | :--- | :--- | :--- |
-| [Git](https://git-scm.com/) | 2.53.0.3 | Installed/updated as needed |
+| [Git](https://git-scm.com/) | 2.56.1 | Installed/updated as needed |
 | [Python/CPython](https://www.python.org/) | 3.13.15 | venv version (v3.10.11 used for reForge) |
 | [Uv](https://github.com/astral-sh/uv/) | 0.12.5 | Installed/updated as needed |
 | [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) & Extensions | Latest | Can be updated by the user |
@@ -272,6 +272,11 @@ The process is identical for pinning/unpinning the reForge core version:
 - `EasyForgeNeo\ReforgeVersionControl-Disable.bat`
 
 ## 📖 Changelog
+
+### 2026/11/28
+
+- Update
+    - Updated Portable Git—which is installed during a new installation in environments where Git is not yet installed—to version 2.56.1.
 
 ### 2026/11/27
 
